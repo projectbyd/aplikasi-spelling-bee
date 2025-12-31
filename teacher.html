@@ -527,12 +527,12 @@ th:nth-child(4),td:nth-child(4){width:20%;}
 <!-- TOP -->
 <div id="top">
   <div id="title">GUIDED MODE</div>
-  <div id="subtitle">
+ <div id="subtitle">
     <br>Tekan ▶ <b>START</b> untuk mendengar soal secara otomatis dengan waktu 20 detik untuk mejawab.<br>
     Tekan 🔊 <b>SPEAK</b> untuk mendengar soal dan langsung menjawab (speaking) <br>
     Tekan 🔠 <b>SPELL</b> untuk mendengar ejaan huruf satu per satu<br>
   </div>
-
+  
   <div id="topBtns" class="hiddenTop">
 
 <button class="btn play" onclick="playAll()">
@@ -598,11 +598,11 @@ th:nth-child(4),td:nth-child(4){width:20%;}
 <!-- BOTTOM -->
 <div id="bottom">
 
-  <!-- 1. UPLOAD FILE -->
-  <label class="bottom-btn upload-btn" id="bottomUpload" for="fileInput">
-  📂 UPLOAD NEW FILE
-</label>
-
+  <!-- 1. back to main page -->
+  <button class="bottom-btn" onclick="goBack()">
+  ⬅ KEMBALI
+</button>
+  
   <!-- 2. INSTRUCTION -->
   <button class="bottom-btn instruction-btn" id="instructionBtn" onclick="openHelp()">INSTRUCTION</button>
 
@@ -896,15 +896,63 @@ document.addEventListener("click", function(e){
   setTimeout(()=>circle.remove(),600);
 });
   
+ /* kembali ke halaman utama*/
+  function goBack(){
+  location.href = "guided-level.html";
+} 
+  
+function getParam(name){
+  return new URLSearchParams(window.location.search).get(name);
+}
+  
+async function loadInternalCSV(level){
+  stopAll();
+  rows = [];
+  tbody.innerHTML = "";
+
+  const res = await fetch(`data/level${level}.csv`);
+  const text = await res.text();
+
+  const lines = text.trim().split("\n").map(l=>l.split(","));
+  lines.shift(); // buang header
+  rows = lines;
+
+  render();
+
+  document.getElementById("startMessage").style.display = "none";
+  document.getElementById("bottomUpload").style.display = "none";
+  document.getElementById("topBtns").classList.remove("hiddenTop");
+  document.getElementById("timer").style.display = "flex";
+  document.getElementById("instructionBtn").style.display = "flex";
+  document.getElementById("tableHead").style.display = "table-header-group";
+}
+
+ window.onload = ()=>{
+  const level = getParam("level");
+  const custom = getParam("custom");
+
+  if(level){
+    initAudio();                 // 🔓 1x saja (aman di HP)
+    loadInternalCSV(level);
+  }
+
+  if(custom){
+    // mode upload manual tetap pakai UI lama
+  }
+};
+
 </script>
 <input type="file"
        id="fileInput"
        accept=".csv"
        style="display:none"
        onchange="loadCSV(event)">
- 
+
+  
 </body>
 </html>
+
+
 
 
 
