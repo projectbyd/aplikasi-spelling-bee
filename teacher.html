@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SPELLING BEE</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Comfortaa&display=swap" rel="stylesheet">
+<div id="topControls">
+  <!-- tombol PLAY PAUSE STOP PLAY AT ROW dll -->
+</div>
+  
+<style>
+html,body{
+  margin:0;padding:0;
+  width:100%;
+  overflow-x:hidden;
+  font-family:'Comfortaa', system-ui,-apple-system,sans-serif;
+}
+:root{
+  --bg:#eef6f1;
+  --primary:#5fb3a2;
+  --warn:#ffd166;
+  --danger:#ef476f;
+  --blue:#38b6ff;
+  --btn-h: 44px;
+}
+.app{background:var(--bg);}
+ 
+/* ===== TOP ===== */
+#top{
+  position:fixed;
+  top:0;left:0;right:0;
+  padding:22px 16px 18px;
+  z-index:1000;
+  background-image:url("header-bg.png");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+
+  box-shadow:0 4px 14px rgba(0,0,0,.15);
+}
+#top::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(255,255,255,.35);
+  z-index:0;
+}
+#title,
+#subtitle,
+#topBtns{
+  position:relative;
+  z-index:1;
+}
+  .hiddenTop{
+  display:none !important;
+}
+#title{
+  text-align:center;
+  font-size:36px;
+  color:#38b6ff;
+  font-weight:900;
+  font-family:'Henny Penny', cursive;
+}
+#subtitle{
+  text-align:center;
+  font-size:12px;
+  color:#38b6ff;
+  text-shadow:0 2px 6px rgba(255,255,255,4);
+  margin-bottom:10px;
+  font-family:'Comfortaa', cursive;
+}
+.hiddenTop{
+  display:none;
+}
+
+#topControls{
+  margin-top:160px; /* jarak dari header bergambar */
+  padding:14px;
+  border-radius:10px;
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+#topControls .btn{
+  height:20px;
+  flex:1;                 /* semua sama besar */
+  border-radius:6px;
+  background:#ffffff;     /* putih */
+  color:#38b6ff;          /* biru */
+  font-weight:900;
+  font-size:14px;
+  }
+  
+#topBtns{
+  display:flex;
+  gap:8px;
+  flex-wrap:nowrap;
+  }
+
+/* PERKECIL BUTTON */
+#topBtns .btn{
+  height:var(--btn-h);
+  padding:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:2px;
+  border-radius:12px;
+  }
+
+#topBtns .icon{
+  font-size:22px;
+  line-height:1;
+}
+
+#topBtns .text{
+  font-size:12px;
+  font-weight:900;
+  line-height:1;
+  }
+
+/* GROUP START ROW */
+.top-group{
+  flex:1;
+  height:var(--btn-h);
+  min-height:var(--btn-h);
+
+  display:flex;
+  align-items:center;
+
+  gap:8px;
+  padding:0 12px;
+
+  background:#e1f2bb;
+  border:2px solid #ffffff;
+  border-radius:12px;   /* sama dengan .btn */
+}
+
+.top-group input{
+  width:35px;     /* nomor pages */
+  height:28px;
+  border:none;
+  border-radius:8px;
+  text-align:center;
+  font-weight:800;
+  font-size:14px;
+}
+.go-btn{
+  height:28px;           /* tombol ok */
+  padding:0 14px;
+  border:2px solid #ffffff;
+  border-radius:8px;
+  background:#edf4dc;
+  color:#38b6ff;
+  font-weight:900;
+  font-size:14px;
+}
+.row-label{
+  font-size:12px;
+  font-weight:900;
+  color:#38b6ff;
+  white-space:nowrap;
+}
+ 
+.btn{
+  flex:1;
+  height:40px;
+  border:none;
+  border-radius:12px;
+  font-size:12px;
+  gap:2px;
+  letter-spacing:0.5px;
+  font-weight:900;
+  font-family:'Comfortaa', cursive;
+  background:#ffffff;   /* putih */
+  color:#38b6ff;        /* biru muda */
+  }
+
+/* ===== TABLE ===== */
+.wrapper{
+  position:fixed;
+  top:300px;
+  bottom:90px;
+  left:0;
+  right:0;
+  overflow-y:auto;
+  -webkit-overflow-scrolling:touch;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  table-layout:fixed;
+}
+th,td{
+  padding:10px;
+  border-bottom:1px solid #ddd;
+  background:#fff;
+  vertical-align:top;
+}
+tr.active td{background:#fff3bf;}
+tr{
+  scroll-margin-top:260px;
+}
+
+.word{
+  font-size:16px;
+  font-weight:800;
+  white-space:nowrap;
+  font-family:'Comfortaa', cursive;
+}
+.sentence{
+  font-size:14px;
+  line-height:1.5;
+  overflow-wrap:break-word;
+  font-family:'Comfortaa', cursive;
+}
+.spellBtn{
+  background:#edf4dc;
+  color:#edf4dc;
+  border:none;
+  padding:6px 10px;
+  border-radius:12px;
+  font-weight:700;
+  font-size:13px;
+  margin:2px;
+  width:70px;
+}
+
+/* Column width */
+th:nth-child(1),td:nth-child(1){width:10%;}
+th:nth-child(2),td:nth-child(2){width:30%;}
+th:nth-child(3),td:nth-child(3){width:40%;}
+th:nth-child(4),td:nth-child(4){width:20%;}
+
+#tableHead{
+  display:none;
+}
+  
+/* ===== BOTTOM ===== */
+#bottom{
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  background:#edf4dc;
+  padding:8px;
+  display:flex;
+  gap:6px;
+  align-items:center;
+  z-index:1000;
+  }
+
+/* BUTTON UMUM */
+.bottom-btn{
+  flex:1;
+  padding:0 14px;
+  border-radius:18px;
+  background:#f2e590;
+  color:#38b6ff;
+  border:2px solid #ffffff;
+  font-weight:900;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  }
+
+/* UPLOAD */
+.upload-btn input{
+  display:none;
+}
+
+/* INSTRUCTION */
+.instruction-btn{
+  flex:1;
+  padding:0 14px;
+  background:##f2e590;
+  color:#38b6ff;
+  font-family:'Comfortaa', cursive;
+}
+#instructionBtn,
+#timer{
+  display:none;
+}
+#bottomUpload{
+  display:none;
+}
+
+/* START ROW GROUP */
+.bottom-group{
+  display:flex;
+  align-items:center;
+  background:#edf4dc;
+  border-radius:18px;
+  padding:4px 8px;
+  height:44px;
+  gap:6px;
+  color:white;
+  font-weight:800;
+}
+
+.bottom-group input{
+  width:50px;
+  border:none;
+  border-radius:10px;
+  text-align:center;
+  height:30px;
+}
+
+.bottom-group button{
+  border:none;
+  border-radius:10px;
+  background:#f2e590;
+  color:white;
+  font-weight:800;
+  padding:6px 10px;
+}
+
+/* TIMER */
+.timer-btn{
+  min-width:70px;
+  padding:0 8px;
+  flex:0.7;
+  border:2px solid #ffffff;
+  margin-left:auto;
+  background:#f2e590;
+  color:#38b6ff;
+  }
+.bottom-btn,
+.timer-btn,
+.btn,
+.top-group,
+.instruction-btn{
+  height:var(--btn-h);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:14px;
+  font-weight:900;
+}
+
+/* ===== POPUP ===== */
+#helpOverlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.45);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  z-index:2000;
+}
+#helpBox{
+  background:#edf4dc;
+  color:#38b6ff;
+  width:88%;
+  max-width:360px;
+  max-height:75vh;
+  overflow-y:auto;
+  border-radius:20px;
+  padding:16px;
+  animation:pop .25s ease;
+  font-family:'Comfortaa', cursive;
+}
+@keyframes pop{
+  from{transform:scale(.9);opacity:0}
+  to{transform:scale(1);opacity:1}
+}
+#helpBox h3{
+  color:#38b6ff;
+  font-size:13px;
+  margin:0 0 8px;
+  text-align:center;
+}
+.helpItem{
+  color:#edf4dc;
+  border-radius:12px;
+  padding:10px;
+  margin-bottom:8px;
+  font-size:10px;
+  line-height:1.4;
+}
+#closeHelp{
+  margin-top:12px;
+  width:100%;
+  height:44px;
+  border:none;
+  border-radius:12px;
+  background:#e1f2bb;
+  color:#38b6ff;
+  font-weight:900;
+  font-size:13px;
+}
+/* RIPPLE EFFECT */
+.ripple{
+  position:relative;
+  overflow:hidden;
+}
+
+.ripple span.ripple-circle{
+  position:absolute;
+  border-radius:50%;
+  transform:scale(0);
+  animation:ripple 0.6s linear;
+  background:rgba(255,255,255,0.6);
+}
+
+@keyframes ripple{
+  to{
+    transform:scale(4);
+    opacity:0;
+  }
+}
+
+/* START MESSAGE */
+#startMessage{
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  z-index:1500;
+
+  width:85%;
+  max-width:360px;
+
+  text-align:center;
+  padding:26px;
+  background:#f9f4d2;
+  border-radius:28px;
+  
+  font-size:17px;
+  font-weight:900;
+  color:#38b6ff;
+
+  cursor:pointer;
+  transition:.25s ease;
+}
+
+
+#startMessage:hover{
+  transform:translate(-50%, -50%) scale(1.03);
+  background:#f0fdf9;
+}
+
+#startMessage span{
+  display:block;
+  margin-top:8px;
+  font-size:14px;
+  opacity:.6;
+}
+
+  #startMessage.hidden {
+  display: none;
+  pointer-events: none;
+}
+
+#csvError{
+  margin:200px auto 40px;
+  max-width:320px;
+  background:#ffe5e5;
+  color:#7a0000;
+  padding:16px;
+  border-radius:18px;
+  font-weight:800;
+  text-align:center;
+  box-shadow:0 6px 14px rgba(0,0,0,.12);
+  display:none;
+  position: relative;
+  z-index: 3000;      /* LEBIH TINGGI dari startMessage */
+  pointer-events: auto;
+}
+.retryUpload{
+  display:inline-block;
+  margin-top:12px;
+  padding:10px 16px;
+  border-radius:14px;
+  background:#f2e590;
+  color:#38b6ff;
+  font-weight:900;
+  cursor:pointer;
+  box-shadow:0 4px 10px rgba(0,0,0,.12);
+}
+  
+@media (orientation: landscape) and (min-width: 768px){
+
+  #top{
+    padding:18px;
+  }
+
+  #title{
+    font-size:34px;
+  }
+
+  #topBtns .btn{
+    height:64px;
+  }
+
+  .wrapper{
+    top:240px;
+    bottom:100px;
+  }
+
+  .word{
+    font-size:18px;
+  }
+
+  .sentence{
+    font-size:16px;
+  }
+
+  #helpBox{
+    max-width:420px;
+  }
+
+}
+  
+</style>
+</head>
+
+<body>
+<div class="app">
+
+<!-- TOP -->
+<div id="top">
+  <div id="title">GUIDED MODE</div>
+  <div id="subtitle">
+    <br>Tekan ▶ <b>START</b> untuk mendengar soal secara otomatis dengan waktu 20 detik untuk mejawab.<br>
+    Tekan 🔊 <b>SPEAK</b> untuk mendengar soal dan langsung menjawab (speaking) <br>
+    Tekan 🔠 <b>SPELL</b> untuk mendengar ejaan huruf satu per satu<br>
+  </div>
+
+  <div id="topBtns" class="hiddenTop">
+
+<button class="btn play" onclick="playAll()">
+  <span class="icon">▶</span>
+  <span class="text">START</span>
+</button>
+
+
+<button class="btn pause" id="pauseBtn" onclick="pauseResume()">
+  <span class="icon">⏸</span>
+  <span class="text">PAUSE</span>
+</button>
+
+
+<button class="btn stop" onclick="stopAll()">
+  <span class="icon">⏹</span>
+  <span class="text">STOP</span>
+</button>
+
+  <!-- PLAY AT ROW -->
+  <div class="top-group">
+    <span class="row-label">GO TO :</span>
+    <input type="number" id="startRow" value="1" min="1">
+    <button class="go-btn" onclick="playFromRow()">OK</button>
+  </div>
+  </div>
+</div>
+    
+  
+<!-- TABLE -->
+<!-- START MESSAGE -->
+<div id="startMessage" onclick="triggerUpload()">
+  <div class="box">
+    📂 <b>Upload a file  to start practice</b>
+       <span>Unggah dokumen CSV untuk memulai latihan Spelling Bee</span>
+  </div>
+</div>
+</label>
+
+<div id="csvError" onclick="triggerUpload()">
+  ⚠️ File tidak sesuai format  
+  <br><br>
+  <small>
+    Pastikan format file .CSV dan <br>format kolom: No, Word, Sentence  
+    <br><br><i><b>tap disini untuk upload ulang file</i></b>
+  </small>
+</div>
+  
+<div class="wrapper">
+<table>
+<thead id="tableHead">
+<tr>
+  <th>No.</th>
+  <th>Word</th>
+  <th>Sentence</th>
+  <th>Action</th>
+</tr>
+</thead>
+<tbody id="tbody"></tbody>
+</table>
+</div>
+
+<!-- BOTTOM -->
+<div id="bottom">
+
+  <!-- 1. UPLOAD FILE -->
+  <label class="bottom-btn upload-btn" id="bottomUpload" for="fileInput">
+  📂 UPLOAD NEW FILE
+</label>
+
+  <!-- 2. INSTRUCTION -->
+  <button class="bottom-btn instruction-btn" id="instructionBtn" onclick="openHelp()">INSTRUCTION</button>
+
+  <!-- 3. TIMER -->
+  <div class="bottom-btn timer-btn" id="timer">⏱️ 20</div>
+
+</div>
+
+
+<!-- POPUP -->
+<div id="helpOverlay" onclick="closeHelp(event)">
+  <div id="helpBox">
+    <h3>📘 CARA MENGGUNAKAN</h3>
+
+    <div class="help-item">
+      <p>▶ <b>START</b></p>
+      <p>Gunakan tombol ini untuk <b>membaca semua baris secara otomatis dengan durasi waktu 20 detik untuk mejawab</b>
+      </p>
+    </div>
+    
+    <div class="help-item">
+      <p>⏸ <b>PAUSE/RESUME</b></p>
+      <p>Gunakan tombol ini untuk <b>menjeda dan memulai kembali suara & timer</b>
+      </p>
+    </div>
+    
+    <div class="help-item">
+      <p>⏹ <b>STOP</b></p>
+      <p>Gunakan tombol ini untuk <b>menghentikan dan reset soal</b>
+      </p>
+    </div>
+    
+    <div class="help-item">
+      <p>🔊 <b>SPEAK</b></p>
+      <p>Gunakan tombol ini untuk <b>untuk mendengarkan soal di 1 baris saja agar anak bisa langsung menjawab secara lisan (speaking)</b>
+      </p>
+    </div>
+    
+    <div class="help-item">
+      <p>🔠 <b>SPELL</b></p>
+      <p>Gunakan tombol ini untuk <b>untuk mendengarkan ejaan huruf demi huruf agar anak lebih fokus belajar ejaan</b><br>
+      </p>
+    </div>
+
+    <button id="closeHelp" onclick="closeHelp()">OK, MENGERTI</button>
+  </div>
+</div>
+
+<script>
+let rows=[], current=0, playing=false, paused=false;
+let timerInterval=null;
+let audioCtx = null;
+function initAudio(){
+  if(!audioCtx){
+    audioCtx = new (window.AudioContext||webkitAudioContext)();
+  }
+  speechSynthesis.cancel();
+  speechSynthesis.speak(new SpeechSynthesisUtterance(" "));
+}
+
+function clearTimer(){ if(timerInterval){clearInterval(timerInterval);timerInterval=null;} }
+async function wait(ms){
+  let t=0;
+  while(t<ms){
+    if(!paused)t+=100;
+    await new Promise(r=>setTimeout(r,100));
+  }
+}
+function speak(text){
+  return new Promise(res=>{
+    const u=new SpeechSynthesisUtterance(text);
+    u.lang="en-US";
+    u.onend=res;
+    speechSynthesis.speak(u);
+  });
+}
+
+/* TIMER SOUND */
+function tick(){
+  const o=audioCtx.createOscillator();
+  const g=audioCtx.createGain();
+  o.frequency.value=700;
+  g.gain.value=0.03;
+  o.connect(g); g.connect(audioCtx.destination);
+  o.start();
+  o.stop(audioCtx.currentTime+0.07);
+}
+function endBell(){
+  const o=audioCtx.createOscillator();
+  const g=audioCtx.createGain();
+  o.frequency.setValueAtTime(880,audioCtx.currentTime);
+  o.frequency.exponentialRampToValueAtTime(440,audioCtx.currentTime+1);
+  g.gain.setValueAtTime(0.2,audioCtx.currentTime);
+  g.gain.exponentialRampToValueAtTime(0.0001,audioCtx.currentTime+1);
+  o.connect(g); g.connect(audioCtx.destination);
+  o.start();
+  o.stop(audioCtx.currentTime+1);
+}
+
+function timer20(){
+  return new Promise(res=>{
+    clearTimer();
+    let t=20;
+    timer.textContent=t;
+    tick();
+    timerInterval=setInterval(()=>{
+      if(paused) return;
+      t--;
+      timer.textContent=t;
+      if(t>0) tick();
+      if(t===0){
+        clearTimer();
+        endBell();
+        setTimeout(res,1000);
+      }
+    },1000);
+  });
+}
+
+/* CSV */
+function loadCSV(e){
+
+  // RESET
+  document.getElementById("csvError").style.display = "none";
+  document.getElementById("startMessage").style.display = "none";
+
+  rows = [];
+  current = 0;
+  tbody.innerHTML = "";
+
+  stopAll();
+
+  const file = e.target.files[0];
+  if(!file) return;
+
+  const r = new FileReader();
+  r.onload = () => {
+    const lines = r.result.trim().split("\n").map(l => l.split(","));
+
+    // ❌ CSV SALAH
+    if(lines.length < 2 || lines[0].length < 3){
+      document.getElementById("csvError").style.display = "block";
+      return;
+    }
+
+    // ✅ CSV BENAR
+    lines.shift();
+    rows = lines;
+
+    render();
+
+    document.getElementById("tableHead").style.display = "table-header-group";
+    document.getElementById("topBtns").classList.remove("hiddenTop");
+    document.getElementById("timer").style.display = "flex";
+    document.getElementById("instructionBtn").style.display = "flex";
+    document.getElementById("bottomUpload").style.display = "flex";
+  };
+
+  r.readAsText(file);
+  e.target.value = "";
+}
+
+function triggerUpload(){
+  const input = document.getElementById("fileInput");
+  input.value = ""; // 🔑 reset agar bisa upload file sama
+  input.click();
+}
+function render(){
+  tbody.innerHTML="";
+  rows.forEach((r,i)=>{
+    const tr=document.createElement("tr");
+    tr.innerHTML=`
+      <td>${r[0]}</td>
+      <td class="word">${r[1]}</td>
+      <td class="sentence">${r[2]}</td>
+      <td>
+        <button class="spellBtn" onclick="speakRow(${i})">🔊</button>
+        <button class="spellBtn" onclick="spell(${i})">🔠</button>
+      </td>`;
+    tbody.appendChild(tr);
+  });
+}
+function focusRow(i){
+  [...tbody.children].forEach(r=>r.classList.remove("active"));
+  tbody.children[i].classList.add("active");
+  tbody.children[i].scrollIntoView({behavior:"smooth",block:"center"});
+}
+
+/* PLAY */
+async function playRow(i){
+  focusRow(i);
+  const w=rows[i][1], s=rows[i][2];
+  await speak(w); await wait(500);
+  await speak(s); await wait(500);
+  await speak(w);
+  await timer20();
+}
+async function playAll(){
+  initAudio();
+  stopAll();
+  current=0; playing=true;
+  for(;current<rows.length && playing;current++){
+    while(paused) await wait(200);
+    await playRow(current);
+  }
+}
+async function playFromRow(){
+  initAudio();
+  stopAll();
+  current=Math.max(0,startRow.value-1);
+  playing=true;
+  for(;current<rows.length && playing;current++){
+    while(paused) await wait(200);
+    await playRow(current);
+  }
+}
+async function speakRow(i){
+  stopAll();
+  focusRow(i);
+  const w=rows[i][1], s=rows[i][2];
+  await speak(w); await wait(500);
+  await speak(s); await wait(500);
+  await speak(w);
+}
+async function spell(i){
+  stopAll();
+  focusRow(i);
+  const w=rows[i][1];
+  await speak(w); await wait(400);
+  for(const c of w){
+    await speak(c);
+    await wait(400);
+  }
+  await speak(w);
+}
+
+/* CONTROL */
+function pauseResume(){
+  paused = !paused;
+
+  const icon = pauseBtn.querySelector(".icon");
+  const text = pauseBtn.querySelector(".text");
+
+  if(paused){
+    speechSynthesis.pause();
+    icon.textContent = "⏸▶";
+    text.textContent = "RESUME";
+  }else{
+    speechSynthesis.resume();
+    icon.textContent = "⏸";
+    text.textContent = "PAUSE";
+  }
+}
+function stopAll(){
+  playing=false; paused=false;
+  speechSynthesis.cancel();
+  clearTimer();
+  timer.textContent="⏱️ 20";
+  
+  const icon = pauseBtn.querySelector(".icon");
+  const text = pauseBtn.querySelector(".text");
+  icon.textContent = "⏸";
+  text.textContent = "PAUSE";
+}
+
+/* POPUP */
+function openHelp(){
+  helpOverlay.style.display="flex";
+}
+function closeHelp(e){
+  if(!e || e.target.id==="helpOverlay"){
+    helpOverlay.style.display="none";
+  }
+}
+document.addEventListener("click", function(e){
+  const btn = e.target.closest("button");
+  if(!btn) return;
+
+  btn.classList.add("ripple");
+
+  const circle = document.createElement("span");
+  circle.classList.add("ripple-circle");
+
+  const d = Math.max(btn.clientWidth, btn.clientHeight);
+  circle.style.width = circle.style.height = d + "px";
+  circle.style.left = e.offsetX - d / 2 + "px";
+  circle.style.top = e.offsetY - d / 2 + "px";
+
+  btn.appendChild(circle);
+
+  setTimeout(()=>circle.remove(),600);
+});
+  
+</script>
+<input type="file"
+       id="fileInput"
+       accept=".csv"
+       style="display:none"
+       onchange="loadCSV(event)">
+ 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

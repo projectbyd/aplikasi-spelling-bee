@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>SPELLING BEE</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- FONT (SAMAKAN DENGAN HALAMAN LAIN) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Comfortaa&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#eef6f1;
+  --primary:#38b6ff;
+  --card:#ffffff;
+  --accent:#f2e590;
+}
+
+html,body{
+  margin:0;
+  padding:0;
+  font-family:'Comfortaa', system-ui, sans-serif;
+  background:var(--bg);
+  color:#333;
+}
+
+.app{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+  box-sizing:border-box;
+  text-align:center;
+  background-image:url("header-bg.png");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+/* ===== HEADER ===== */
+#appTitle{    /* ===== SPELLING BEE ===== */
+  font-family:'Henny Penny', cursive;
+  font-size:52px;
+  color:var(--primary);
+  margin:0;
+  text-align:center;
+}
+
+#appTagline{    /* ===== DESKRIPSI DIBAWAH JUDUL BESAR ===== */
+  margin-top:6px;
+  font-size:14px;
+  text-align:center;
+  max-width:420px;
+  line-height:1.5;
+  color:#555;
+}
+
+/* ===== MODE TITLE ===== */
+#modeTitle{   /* ===== PILIH MODE BELAJAR ===== */
+  margin-top:40px;
+  margin-bottom:18px;
+  font-size:20px;
+  font-weight:900;
+  color:#38b6ff;
+  text-align:center;
+}
+
+/* ===== MODE BUTTONS ===== */
+.mode-wrapper{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+  width:100%;
+  max-width:360px;
+}
+
+.mode-card{
+  background:var(--card);
+  border-radius:24px;
+  padding:22px;
+  border:2px solid #ffffff;
+  box-shadow:0 6px 16px rgba(0,0,0,.08);
+  cursor:pointer;
+  transition:.25s ease;
+  text-align:center;
+}
+
+.mode-card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 10px 24px rgba(0,0,0,.12);
+}
+
+.mode-card h3{    /* tulisan practice mode/guided mode */
+  margin:0 0 6px;
+  font-size:24px;
+  color:#38b6ff;
+  font-weight:900;
+}
+
+.mode-card p{
+  margin:0;
+  font-size:14px;
+  line-height:1.5;
+  color:#555;
+}
+
+/* VARIASI WARNA */
+.mode-card.practice{
+  background:#f9f4d2;
+}
+
+.mode-card.guided{
+  background:#f9f4d2;
+}
+
+/* FOOTER NOTE */
+.footer-note{
+  margin-top:40px;
+  font-size:12px;
+  color:#777;
+  text-align:center;
+  max-width:420px;
+  line-height:1.4;
+}
+</style>
+</head>
+
+<body>
+<div class="app">
+
+  <!-- JUDUL APLIKASI -->
+  <h1 id="appTitle">SPELLING BEE</h1>
+
+  <p id="appTagline">
+    Aplikasi interaktif untuk membantu latihan Spelling Bee dengan
+    mendengarkan, berbicara, dan menulis dengan cara yang menyenangkan.
+  </p>
+
+  <!-- JUDUL PILIH MODE -->
+  <h2 id="modeTitle">PILIH MODE BELAJAR</h2>
+
+  <!-- PILIHAN MODE -->
+  <div class="mode-wrapper">
+
+    <!-- PRACTICE MODE -->
+    <button class="mode-card practice" onclick="goPractice()">
+      <h3>PRACTICE MODE</h3>
+      <p>
+        Mode latihan mandiri untuk anak.<br>
+        </p>
+    </button>
+
+    <!-- GUIDED MODE -->
+    <button class="mode-card guided" onclick="goGuided()">
+      <h3>GUIDED MODE</h3>
+      <p>
+        Mode pendampingan oleh guru atau orang tua dengan variasi soal yang dapat dimodifikasi.<br>
+      </p>
+    </button>
+
+  </div>
+
+  <div class="footer-note">
+    cocok digunakan di rumah, sekolah, atau kelas daring.
+  </div>
+
+</div>
+
+<script>
+function goPractice(){
+  window.location.href = "student.html";
+}
+
+function goGuided(){
+  window.location.href = "teacher.html";
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

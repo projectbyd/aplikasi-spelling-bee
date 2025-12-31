@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Practice Mode – Spelling Bee</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Comfortaa&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<style>
+body{
+  margin:0;
+  font-family:'Comfortaa';
+  background-image:url("header-bg.png");
+  background-size:cover;
+  background-position:center;
+  background-repeat:repeat;
+  text-align:center;
+}
+#top{
+  position:fixed;
+  top:0;left:0;right:0;
+  padding:22px 16px 18px;
+}
+#title{
+  font-family:'Henny Penny';
+  font-size:40px;
+  color:#38b6ff;
+  text-align:center;
+}
+#desc{
+  font-size:14px;
+  margin-top:2px;
+  text-align:center;
+}
+.card{
+  margin:30px auto;
+  max-width:360px;
+  background:#fff;
+  padding:24px;
+  border-radius:20px;
+  box-shadow:0 8px 18px rgba(0,0,0,.15);
+}
+input,select,button{
+  width:100%;
+  height:44px;
+  border-radius:12px;
+  border:none;
+  margin-top:10px;
+  font-size:15px;
+}
+button{
+  background:#f2e590;
+  font-weight:900;
+  color:#38b6ff;
+  cursor:pointer;
+}
+#status{
+  margin-top:16px;
+  font-weight:900;
+  text-align:center;
+}
+#timer{
+  font-size:26px;
+  text-align:center;
+  margin-top:10px;
+}
+
+  .hidden{
+  display:none;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ===== SCREEN 1 : START ===== -->
+<div id="startScreen" class="card">
+  <div id="title">Practice Mode</div>
+  <p><i>soal akan dibacakan dengan durasi jawab 20 detik, setelah selesai mengerjakan akan keluar review jawaban dan skor nilai <i></i></p>
+
+  <input id="studentName" placeholder="Nama">
+  <select id="level">
+    <option value="">Pilih level</option>
+    <option value="1">Level 1</option>
+    <option value="2">Level 2</option>
+    <option value="3">Level 3</option>
+  </select>
+
+  <button onclick="startPractice()">START PRACTICE</button>
+</div>
+
+<!-- ===== SCREEN 2 : PRACTICE ===== -->
+<div id="practiceScreen" class="card" style="display:none">
+  <div id="practiceTitle">PRACTICE MODE</div>
+  <p id="questionInfo"></p>
+
+  <div id="timer">⏱️ 20</div>
+
+  <input id="answerInput" placeholder="Ketik jawaban di sini">
+  <button id="submitBtn" onclick="submitAnswer()">SUBMIT</button>
+
+  <div id="status"></div>
+</div>
+  
+<!-- 3. HALAMAN REVIEW JAWABAN -->
+  <section id="reviewSection" class="hidden">
+    <h2>📋 Review Jawaban</h2>
+    <h3 id="reviewScore" style="margin:12px 0;color:#38b6ff;"></h3>
+
+    <p class="review-desc">
+      Periksa jawaban kamu di bawah ini.  
+      Kamu bisa melihat hasilnya atau mengunduh laporan latihan.
+    </p>
+
+    <div id="reviewList"></div>
+
+    <div class="review-actions">
+      <button class="btn btn-secondary" onclick="restartPractice()">
+        🔁 Latihan Ulang
+      </button>
+
+      <button class="btn btn-primary" onclick="exportPDF()">
+        📄 Unduh Hasil (PDF)
+      </button>
+    </div>
+  </section>
+<script src="js/practice.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
