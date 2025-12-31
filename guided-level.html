@@ -1,45 +1,293 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
 <title>Guided Mode</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Comfortaa&display=swap" rel="stylesheet">
+
 <style>
 body{
-  font-family:Comfortaa, sans-serif;
+  margin:0;
+  font-family:'Comfortaa', sans-serif;
   background:#eef6f1;
-  padding:30px;
+  text-align:center;
 }
-h1{text-align:center;color:#38b6ff}
+
+/* ===== COMMON ===== */
+.hidden{display:none;}
 .btn{
-  width:100%;
-  padding:16px;
-  margin:12px 0;
+  height:52px;
   border:none;
-  border-radius:18px;
-  font-size:16px;
+  border-radius:16px;
   font-weight:900;
+  font-size:16px;
   background:#f2e590;
   color:#38b6ff;
+  cursor:pointer;
+}
+
+/* ===== LEVEL SCREEN ===== */
+#levelScreen{
+  padding:30px 16px;
+}
+#levelTitle{
+  font-family:'Henny Penny';
+  font-size:40px;
+  color:#38b6ff;
+}
+#levelDesc{
+  font-size:14px;
+  margin:10px 0 24px;
+}
+.level-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+  max-width:360px;
+  margin:0 auto;
+}
+.level-btn{
+  height:90px;
+  border-radius:20px;
+  background:#ffffff;
+  box-shadow:0 6px 14px rgba(0,0,0,.15);
+  font-weight:900;
+  color:#38b6ff;
+  font-size:18px;
+}
+.full{
+  grid-column:span 2;
+}
+.back-home{
+  margin-top:20px;
+  background:#e1f2bb;
+}
+
+/* ===== GUIDED UI ===== */
+#guidedUI{
+  display:none;
+}
+#top{
+  position:fixed;
+  top:0;left:0;right:0;
+  padding:20px;
+  background:#fff;
+  box-shadow:0 4px 12px rgba(0,0,0,.15);
+  z-index:1000;
+}
+#title{
+  font-family:'Henny Penny';
+  font-size:36px;
+  color:#38b6ff;
+}
+#subtitle{
+  font-size:12px;
+  margin-top:6px;
+}
+#topBtns{
+  display:flex;
+  gap:8px;
+  margin-top:12px;
+}
+#topBtns .btn{
+  flex:1;
+  height:46px;
+}
+
+.wrapper{
+  position:fixed;
+  top:240px;
+  bottom:90px;
+  left:0;right:0;
+  overflow-y:auto;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+}
+td,th{
+  padding:10px;
+  border-bottom:1px solid #ddd;
+}
+.word{font-weight:900;}
+.spellBtn{
+  padding:6px 10px;
+  border:none;
+  border-radius:10px;
+  background:#edf4dc;
+}
+
+#bottom{
+  position:fixed;
+  bottom:0;
+  left:0;right:0;
+  padding:10px;
+  background:#edf4dc;
+  display:flex;
+  gap:8px;
+}
+#timer{
+  flex:1;
+  font-weight:900;
+  font-size:18px;
 }
 </style>
 </head>
+
 <body>
 
-<h1>GUIDED MODE</h1>
+<!-- ================= LEVEL SELECTION ================= -->
+<section id="levelScreen">
+  <div id="levelTitle">Guided Mode</div>
+  <div id="levelDesc">
+    Pilih level latihan atau gunakan soal sendiri
+  </div>
 
-<button class="btn" onclick="go(1)">LEVEL 1</button>
-<button class="btn" onclick="go(2)">LEVEL 2</button>
-<button class="btn" onclick="go(3)">LEVEL 3</button>
-<button class="btn" onclick="go(4)">LEVEL 4</button>
+  <div class="level-grid">
+    <button class="level-btn" onclick="loadLevel('data/level1.csv')">LEVEL 1</button>
+    <button class="level-btn" onclick="loadLevel('data/level2.csv')">LEVEL 2</button>
+    <button class="level-btn" onclick="loadLevel('data/level3.csv')">LEVEL 3</button>
+    <button class="level-btn" onclick="loadLevel('data/level4.csv')">LEVEL 4</button>
 
-<button class="btn" onclick="goCustom()">📂 SOAL SENDIRI</button>
+    <button class="level-btn full" onclick="location.href='teacher.html'">
+      📂 GUNAKAN SOAL SENDIRI
+    </button>
+
+    <button class="btn full back-home" onclick="location.href='index.html'">
+      ⬅ KEMBALI KE MENU UTAMA
+    </button>
+  </div>
+</section>
+
+<!-- ================= GUIDED MODE UI ================= -->
+<section id="guidedUI">
+
+  <div id="top">
+    <div id="title">Guided Mode</div>
+    <div id="subtitle">
+      ▶ START untuk membaca otomatis • 🔊 SPEAK • 🔠 SPELL
+    </div>
+
+    <div id="topBtns">
+      <button class="btn" onclick="playAll()">▶ START</button>
+      <button class="btn" onclick="pauseResume()">⏸ PAUSE</button>
+      <button class="btn" onclick="stopAll()">⏹ STOP</button>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Word</th>
+          <th>Sentence</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+
+  <div id="bottom">
+    <div id="timer">⏱️ 20</div>
+    <button class="btn" onclick="location.href='guided-level.html'">
+      ⬅ PILIH LEVEL
+    </button>
+  </div>
+
+</section>
 
 <script>
-function go(l){
-  location.href = `guided-player.html?level=${l}`;
+let rows=[],current=0,playing=false,paused=false;
+let timerInterval=null,audioCtx=null;
+
+function initAudio(){
+  if(!audioCtx){
+    audioCtx=new (window.AudioContext||webkitAudioContext)();
+  }
+  speechSynthesis.cancel();
+  speechSynthesis.speak(new SpeechSynthesisUtterance(" "));
 }
-function goCustom(){
-  location.href = `guided-player.html?custom=1`;
+
+function speak(text){
+  return new Promise(res=>{
+    const u=new SpeechSynthesisUtterance(text);
+    u.lang="en-US";
+    u.onend=res;
+    speechSynthesis.speak(u);
+  });
+}
+function wait(ms){return new Promise(r=>setTimeout(r,ms));}
+
+function loadLevel(path){
+  fetch(path)
+    .then(r=>r.text())
+    .then(t=>{
+      const lines=t.trim().split("\n").slice(1);
+      rows=lines.map(l=>l.split(","));
+      render();
+      document.getElementById("levelScreen").style.display="none";
+      document.getElementById("guidedUI").style.display="block";
+    });
+}
+
+function render(){
+  tbody.innerHTML="";
+  rows.forEach((r,i)=>{
+    tbody.innerHTML+=`
+      <tr>
+        <td>${i+1}</td>
+        <td class="word">${r[1]}</td>
+        <td>${r[2]}</td>
+        <td>
+          <button class="spellBtn" onclick="speakRow(${i})">🔊</button>
+          <button class="spellBtn" onclick="spell(${i})">🔠</button>
+        </td>
+      </tr>`;
+  });
+}
+
+async function playRow(i){
+  await speak(rows[i][1]);
+  await wait(400);
+  await speak(rows[i][2]);
+  await wait(400);
+  await speak(rows[i][1]);
+}
+
+async function playAll(){
+  initAudio();
+  playing=true;
+  for(current=0;current<rows.length && playing;current++){
+    while(paused) await wait(200);
+    await playRow(current);
+    await wait(500);
+  }
+}
+
+function pauseResume(){
+  paused=!paused;
+  paused?speechSynthesis.pause():speechSynthesis.resume();
+}
+function stopAll(){
+  playing=false;
+  paused=false;
+  speechSynthesis.cancel();
+}
+
+async function speakRow(i){
+  stopAll();
+  await playRow(i);
+}
+async function spell(i){
+  stopAll();
+  for(const c of rows[i][1]){
+    await speak(c);
+    await wait(300);
+  }
 }
 </script>
 
