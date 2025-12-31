@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guided Mode</title>
+<style>
+body{
+  font-family:Comfortaa, sans-serif;
+  background:#eef6f1;
+  padding:30px;
+}
+h1{text-align:center;color:#38b6ff}
+.btn{
+  width:100%;
+  padding:16px;
+  margin:12px 0;
+  border:none;
+  border-radius:18px;
+  font-size:16px;
+  font-weight:900;
+  background:#f2e590;
+  color:#38b6ff;
+}
+</style>
+</head>
+<body>
+
+<h1>GUIDED MODE</h1>
+
+<button class="btn" onclick="go(1)">LEVEL 1</button>
+<button class="btn" onclick="go(2)">LEVEL 2</button>
+<button class="btn" onclick="go(3)">LEVEL 3</button>
+<button class="btn" onclick="go(4)">LEVEL 4</button>
+
+<button class="btn" onclick="goCustom()">📂 SOAL SENDIRI</button>
+
+<script>
+function go(l){
+  location.href = `guided-player.html?level=${l}`;
+}
+function goCustom(){
+  location.href = `guided-player.html?custom=1`;
+}
+</script>
+
+</body>
+</html>
