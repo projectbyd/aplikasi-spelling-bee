@@ -785,13 +785,16 @@ async function loadInternalCSV(level){
 
     console.log("Loading level:", level);
 
-    const res = await fetch(data/level${level}.csv);
+    const res = await fetch('data/level${level}.csv');
     if(!res.ok) throw new Error("CSV not found");
 
     const text = await res.text();
     console.log("CSV RAW:", text);
 
-    const lines = text.trim().split("\n").map(l => l.split(","));
+    const lines = text
+      .trim()
+      .split(/\r?\n/)
+      .map(l => l.split(",").map(v => v.trim()));
 
     lines.shift(); // remove header
     rows = lines;
@@ -830,6 +833,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
 
 </body>
 </html>
+
 
 
 
