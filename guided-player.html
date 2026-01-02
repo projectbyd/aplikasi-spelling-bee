@@ -778,26 +778,42 @@ function getParam(name){
 }
 
 async function loadInternalCSV(level){
-  stopAll();
-  rows = [];
-  tbody.innerHTML = "";
+  try{
+    stopAll();
+    rows = [];
+    tbody.innerHTML = "";
 
-  const res = await fetch(`data/level${level}.csv`);
-  const text = await res.text();
+    console.log("Loading level:", level);
 
-  const lines = text
-  .trim()
-  .split(/\r?\n/)
-  .map(l => l.split(",").map(v=> v.trim()));
-  lines.shift(); // buang header
-  rows = lines;
+    const res = await fetch(data/level${level}.csv);
+    if(!res.ok) throw new Error("CSV not found");
 
-  render();
+    const text = await res.text();
+    console.log("CSV RAW:", text);
 
-  document.getElementById("topBtns").classList.remove("hiddenTop");
-  document.getElementById("timer").style.display = "flex";
-  document.getElementById("instructionBtn").style.display = "flex";
-  document.getElementById("tableHead").style.display = "table-header-group";
+    const lines = text
+      .trim()
+      .split(/\r?\n/)
+      .map(l => l.split(",").map(v => v.trim()));
+
+    lines.shift(); // remove header
+    rows = lines;
+
+    console.log("PARSED ROWS:", rows);
+
+    if(rows.length === 0) throw new Error("CSV empty");
+
+    render();
+
+    document.getElementById("topBtns").classList.remove("hiddenTop");
+    document.getElementById("timer").style.display = "flex";
+    document.getElementById("instructionBtn").style.display = "flex";
+    document.getElementById("tableHead").style.display = "table-header-group";
+
+  }catch(err){
+    alert("GAGAL LOAD CSV: " + err.message);
+    console.error(err);
+  }
 }
 
 window.addEventListener("DOMContentLoaded", ()=>{
@@ -817,6 +833,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
 
 </body>
 </html>
+
 
 
 
