@@ -750,6 +750,10 @@ document.addEventListener("click", function(e){
   const btn = e.target.closest("button");
   if(!btn) return;
 
+  const rect = btn.getBoundingClientRect();
+  const x = e.clientX - rect.left;
+  const y = e.clientY - rect.top;
+
   btn.classList.add("ripple");
 
   const circle = document.createElement("span");
@@ -757,11 +761,10 @@ document.addEventListener("click", function(e){
 
   const d = Math.max(btn.clientWidth, btn.clientHeight);
   circle.style.width = circle.style.height = d + "px";
-  circle.style.left = e.offsetX - d / 2 + "px";
-  circle.style.top = e.offsetY - d / 2 + "px";
+  circle.style.left = x - d / 2 + "px";
+  circle.style.top  = y - d / 2 + "px";
 
   btn.appendChild(circle);
-
   setTimeout(()=>circle.remove(),600);
 });
   
@@ -788,7 +791,6 @@ async function loadInternalCSV(level){
 
   render();
 
-  document.getElementById("bottomUpload").style.display = "none";
   document.getElementById("topBtns").classList.remove("hiddenTop");
   document.getElementById("timer").style.display = "flex";
   document.getElementById("instructionBtn").style.display = "flex";
@@ -812,6 +814,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
 
 </body>
 </html>
+
 
 
 
