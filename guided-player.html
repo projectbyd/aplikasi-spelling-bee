@@ -46,6 +46,7 @@ html,body{
   inset:0;
   background:rgba(255,255,255,.35);
   z-index:0;
+  pointer-events:none;
 }
 #title,
 #subtitle,
@@ -794,10 +795,6 @@ async function loadInternalCSV(level){
   document.getElementById("tableHead").style.display = "table-header-group";
 }
 
-if(level){
-  loadLevelCSV(level);
-}
-
 window.addEventListener("DOMContentLoaded", ()=>{
   const level = new URLSearchParams(window.location.search).get("level");
   const custom = new URLSearchParams(window.location.search).get("custom");
@@ -815,6 +812,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
 
 </body>
 </html>
+
 
 
 
