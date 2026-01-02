@@ -9,9 +9,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Comfortaa&display=swap" rel="stylesheet">
-<div id="topControls">
-  <!-- tombol PLAY PAUSE STOP PLAY AT ROW dll -->
-</div>
   
 <style>
 html,body{
@@ -186,6 +183,7 @@ html,body{
 .wrapper{
   position:fixed;
   top:300px;
+  padding-top:10px;
   bottom:90px;
   left:0;
   right:0;
@@ -279,7 +277,7 @@ th:nth-child(4),td:nth-child(4){width:20%;}
 .instruction-btn{
   flex:1;
   padding:0 14px;
-  background:##f2e590;
+  background:#f2e590;
   color:#38b6ff;
   font-family:'Comfortaa', cursive;
 }
@@ -597,6 +595,9 @@ function speak(text){
 
 /* TIMER SOUND */
 function tick(){
+  if(!audioCtx) return;
+  if(audioCtx.state==="suspended") audioCtx.resume();
+  
   const o=audioCtx.createOscillator();
   const g=audioCtx.createGain();
   o.frequency.value=700;
@@ -793,36 +794,28 @@ async function loadInternalCSV(level){
   document.getElementById("tableHead").style.display = "table-header-group";
 }
 
- window.onload = ()=>{
-  const level = getParam("level");
-  const custom = getParam("custom");
-
-  if(level){
-    initAudio();                 // 🔓 1x saja (aman di HP)
-    loadInternalCSV(level);
-  }
-
-  if(custom){
-    // mode upload manual tetap pakai UI lama
-  }
-};
-
 if(level){
   loadLevelCSV(level);
 }
 
 window.addEventListener("DOMContentLoaded", ()=>{
   const level = new URLSearchParams(window.location.search).get("level");
+  const custom = new URLSearchParams(window.location.search).get("custom");
 
   if(level){
-    initAudio();           // unlock audio (aman di HP)
+    initAudio();           // 🔓 unlock audio 1x
     loadInternalCSV(level);
+  }
+
+  if(custom){
+    // nanti upload mode
   }
 });
 </script>
 
 </body>
 </html>
+
 
 
 
