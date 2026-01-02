@@ -783,9 +783,9 @@ async function loadInternalCSV(level){
     rows = [];
     tbody.innerHTML = "";
 
-    console.log('FETCHING: data/level${level}.csv');
+    console.log(`FETCHING: data/level${level}.csv`);
 
-    const res = await fetch('data/level${level}.csv');
+    const res = await fetch(`data/level${level}.csv`);
     if(!res.ok) throw new Error("CSV not found");
 
     const text = await res.text();
@@ -833,6 +833,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
 
 </body>
 </html>
+
 
 
 
