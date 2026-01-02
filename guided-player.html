@@ -791,10 +791,7 @@ async function loadInternalCSV(level){
     const text = await res.text();
     console.log("CSV RAW:", text);
 
-    const lines = text
-      .trim()
-      .split(/\r?\n/)
-      .map(l => l.split(",").map(v => v.trim()));
+    const lines = text.trim().split("\n").map(l => l.split(","));
 
     lines.shift(); // remove header
     rows = lines;
@@ -833,6 +830,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
 
 </body>
 </html>
+
 
 
 
