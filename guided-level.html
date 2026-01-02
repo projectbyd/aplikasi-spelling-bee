@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,66 +8,136 @@
 <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Comfortaa&display=swap" rel="stylesheet">
 
 <style>
+:root{
+  --blue:#38b6ff;
+  --yellow:#f2e590;
+  --bg:#eef6f1;
+}
+
 body{
   margin:0;
-  font-family:'Comfortaa';
-  background:#eef6f1;
-  display:flex;
-  align-items:center;
-  justify-content:center;
   min-height:100vh;
+  font-family:'Comfortaa', system-ui, sans-serif;
+  background:var(--bg);
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
+
 .box{
   width:100%;
   max-width:360px;
-  padding:24px;
+  padding:22px;
   text-align:center;
 }
+
 h1{
-  font-family:'Henny Penny';
+  font-family:'Henny Penny', cursive;
   font-size:36px;
-  color:#38b6ff;
+  color:var(--blue);
+  margin-bottom:6px;
 }
+
 p{
   font-size:14px;
-  margin-bottom:20px;
+  color:#555;
+  margin-bottom:22px;
 }
-button{
-  width:100%;
-  height:48px;
+
+/* ===== GRID LEVEL ===== */
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+  margin-bottom:22px;
+}
+
+.level-btn{
+  height:88px;
+  border-radius:22px;
   border:none;
-  border-radius:18px;
-  background:#f2e590;
-  color:#38b6ff;
+  background:var(--yellow);
+  color:var(--blue);
+  font-size:18px;
+  font-weight:900;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+}
+
+.level-btn span{
+  font-size:12px;
+  font-weight:700;
+}
+
+/* ===== FULL BUTTON ===== */
+.full-btn{
+  width:100%;
+  height:52px;
+  border:none;
+  border-radius:20px;
+  background:#fff;
+  color:var(--blue);
   font-weight:900;
   margin-bottom:12px;
-  font-size:16px;
+  font-size:15px;
+  border:2px solid #fff;
+}
+
+.back-btn{
+  background:#edf4dc;
 }
 </style>
 </head>
 
 <body>
 <div class="box">
+
   <h1>Guided Mode</h1>
   <p>Pilih level latihan atau gunakan soal sendiri</p>
 
-  <button onclick="goLevel(1)">Level 1</button>
-  <button onclick="goLevel(2)">Level 2</button>
-  <button onclick="goLevel(3)">Level 3</button>
-  <button onclick="goLevel(4)">Level 4</button>
+  <!-- GRID LEVEL -->
+  <div class="grid">
+    <button class="level-btn" onclick="goLevel(1)">
+      LEVEL 1
+      <span>Mudah</span>
+    </button>
 
-  <button onclick="window.location.href='teacher.html'">
-    Gunakan Soal Sendiri
+    <button class="level-btn" onclick="goLevel(2)">
+      LEVEL 2
+      <span>Menengah</span>
+    </button>
+
+    <button class="level-btn" onclick="goLevel(3)">
+      LEVEL 3
+      <span>Sulit</span>
+    </button>
+
+    <button class="level-btn" onclick="goLevel(4)">
+      LEVEL 4
+      <span>Advanced</span>
+    </button>
+  </div>
+
+  <!-- SOAL SENDIRI -->
+  <button class="full-btn"
+    onclick="location.href='teacher.html'">
+    📄 Gunakan Soal Sendiri
   </button>
 
-  <button onclick="window.location.href='index.html'">
+  <!-- BACK -->
+  <button class="full-btn back-btn"
+    onclick="location.href='index.html'">
     ⬅ Kembali ke Menu Utama
   </button>
+
 </div>
 
 <script>
 function goLevel(level){
-  window.location.href = guided-player.html?level=${level};
+  window.location.href = 'guided-player.html?level=${level}';
 }
 </script>
 </body>
