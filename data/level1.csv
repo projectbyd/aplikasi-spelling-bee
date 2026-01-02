@@ -1,12 +1,12 @@
-No,Word,Sentence
-1,cat,The cat is sleeping.
-2,dog,My dog is very friendly.
-3,sun,The sun is bright today.
-4,moon,The moon shines at night.
-5,star,I see a star in the sky.
-6,ball,I kick the ball.
-7,book,She reads a book.
-8,pen,This is my pen.
+no,word,sentence
+1,cat,The cat is sleeping
+2,dog,My dog is very friendly
+3,sun,The sun is bright today
+4,moon,The moon shines at night
+5,star,I see a star in the sky
+6,ball,I kick the ball
+7,book,She reads a book
+8,pen,This is my pen
 9,hat,He wears a red hat.
 10,cup,I drink from the cup.
 11,bed,I sleep on my bed.
@@ -299,4 +299,5 @@ No,Word,Sentence
 298,smell,I smell fresh flowers.
 299,touch,Touch the soft fur.
 300,enjoy,I enjoy the sunny day.
+
 
