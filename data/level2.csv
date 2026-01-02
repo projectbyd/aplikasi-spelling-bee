@@ -1,4 +1,4 @@
-No.,Word,Sentence
+No,Word,Sentence
 1,Parent,My parent always supports my education.
 2,Department,She works in the science department at school.
 3,Scourge,Plastic waste has become a scourge to the ocean.
@@ -101,7 +101,7 @@ No.,Word,Sentence
 100,Receptionist,The receptionist welcomed the guests.
 101,Swell,The waves began to swell as the storm approached.
 102,Stool,He sat on a wooden stool.
-103,Tongue,Stick out your tongue and say ìahî.
+103,Tongue,Stick out your tongue and say ‚Äúah‚Äù.
 104,College,She plans to study abroad after college.
 105,Museum,The museum displays ancient artifacts.
 106,Seaweed,Seaweed washed up on the shore.
@@ -140,7 +140,7 @@ No.,Word,Sentence
 139,Thirsty,I feel thirsty after running.
 140,Already,I have already finished my work.
 141,Understand,I understand the lesson now.
-142,Ugliest,That was the ugliest hat Iíve ever seen.
+142,Ugliest,That was the ugliest hat I‚Äôve ever seen.
 143,Concept,The concept is easy to understand.
 144,Freezer,Put the ice cream in the freezer.
 145,Toaster,The toaster burned the bread.
@@ -180,7 +180,7 @@ No.,Word,Sentence
 179,Dentist,The dentist cleaned my teeth.
 180,Market,The market opens early.
 181,Volleyball,They play volleyball every weekend.
-182,Heater,Turn on the heater when itís cold.
+182,Heater,Turn on the heater when it‚Äôs cold.
 183,League,The team joined a new league.
 184,Famous,She became famous after the show.
 185,Pencil,Sharpen your pencil before writing.
@@ -201,7 +201,7 @@ No.,Word,Sentence
 200,Microphone,He tested the microphone.
 201,Swell,The waves began to swell as the storm approached.
 202,Stool,He sat on a wooden stool.
-203,Tongue,Stick out your tongue and say ìahî.
+203,Tongue,Stick out your tongue and say ‚Äúah‚Äù.
 204,College,She plans to study abroad after college.
 205,Museum,The museum displays ancient artifacts.
 206,Seaweed,Seaweed washed up on the shore.
@@ -240,7 +240,7 @@ No.,Word,Sentence
 239,Thirsty,I feel thirsty after running.
 240,Already,I have already finished my work.
 241,Understand,I understand the lesson now.
-242,Ugliest,That was the ugliest hat Iíve ever seen.
+242,Ugliest,That was the ugliest hat I‚Äôve ever seen.
 243,Concept,The concept is easy to understand.
 244,Freezer,Put the ice cream in the freezer.
 245,Toaster,The toaster burned the bread.
@@ -280,7 +280,7 @@ No.,Word,Sentence
 279,Dentist,The dentist cleaned my teeth.
 280,Market,The market opens early.
 281,Volleyball,They play volleyball every weekend.
-282,Heater,Turn on the heater when itís cold.
+282,Heater,Turn on the heater when it‚Äôs cold.
 283,League,The team joined a new league.
 284,Famous,She became famous after the show.
 285,Pencil,Sharpen your pencil before writing.
@@ -299,3 +299,4 @@ No.,Word,Sentence
 298,Faraway,They moved to a faraway city.
 299,Knives,Keep knives in a safe place.
 300,Microphone,He tested the microphone.
+
