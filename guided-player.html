@@ -787,7 +787,7 @@ async function loadInternalCSV(level){
 
   const lines = text
   .trim()
-  .split(/\r?\n/))
+  .split(/\r?\n/)
   .map(l => l.split(",").map(v=> v.trim()));
   lines.shift(); // buang header
   rows = lines;
@@ -817,6 +817,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
 
 </body>
 </html>
+
 
 
 
