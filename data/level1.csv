@@ -1,4 +1,4 @@
-No.,Word,Sentence
+No,Word,Sentence
 1,cat,The cat is sleeping.
 2,dog,My dog is very friendly.
 3,sun,The sun is bright today.
@@ -128,7 +128,7 @@ No.,Word,Sentence
 127,swing,I swung higher and higher.
 128,slide,The slide was fast and fun.
 129,game,We played a fun game together.
-130,hide,Let’s hide behind the tree.
+130,hide,Letâ€™s hide behind the tree.
 131,seek,We played hide and seek.
 132,run,I ran as fast as I could.
 133,jump,I jumped over the puddle.
@@ -299,3 +299,4 @@ No.,Word,Sentence
 298,smell,I smell fresh flowers.
 299,touch,Touch the soft fur.
 300,enjoy,I enjoy the sunny day.
+
