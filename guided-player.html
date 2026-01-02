@@ -567,9 +567,6 @@ th:nth-child(4),td:nth-child(4){width:20%;}
 </div>
 
 <script>
-const params = new URLSearchParams(window.location.search);
-const level = params.get("level"); // level1, level2, dst
-
 let rows=[], current=0, playing=false, paused=false;
 let timerInterval=null;
 let audioCtx = null;
@@ -640,9 +637,6 @@ function timer20(){
   });
 }
 
-
-
-}
 function render(){
   tbody.innerHTML="";
   rows.forEach((r,i)=>{
@@ -778,23 +772,6 @@ function getParam(name){
   return new URLSearchParams(window.location.search).get(name);
 }
 
-async function loadLevelCSV(){
-  const res = await fetch(data/${level}.csv);
-  const text = await res.text();
-
-  const lines = text.trim().split("\n").map(l=>l.split(","));
-  lines.shift(); // buang header
-
-  rows = lines;
-  render();
-
-  // tampilkan UI sama seperti upload sukses
-  document.getElementById("topBtns").classList.remove("hiddenTop");
-  document.getElementById("tableHead").style.display="table-header-group";
-  document.getElementById("timer").style.display="flex";
-  document.getElementById("instructionBtn").style.display="flex";
-}
- 
 async function loadInternalCSV(level){
   stopAll();
   rows = [];
@@ -829,40 +806,24 @@ async function loadInternalCSV(level){
     // mode upload manual tetap pakai UI lama
   }
 };
-const params = new URLSearchParams(window.location.search);
-const level = params.get("level");
 
 if(level){
   loadLevelCSV(level);
 }
 
-async function loadLevelCSV(level){
-  initAudio();
+window.addEventListener("DOMContentLoaded", ()=>{
+  const level = new URLSearchParams(window.location.search).get("level");
 
-  const res = await fetch(data/level${level}.csv);
-  const text = await res.text();
-
-  const lines = text.trim().split("\n").map(l=>l.split(","));
-  lines.shift(); // buang header
-
-  rows = lines;
-  render();
-
-  // tampilkan UI sama seperti upload berhasil
-  document.getElementById("topBtns").classList.remove("hiddenTop");
-  document.getElementById("tableHead").style.display="table-header-group";
-  document.getElementById("bottomUpload").style.display="none";
-  document.getElementById("instructionBtn").style.display="flex";
-  document.getElementById("timer").style.display="flex";
-}
-window.onload = () => {
-  initAudio();
-  loadLevelCSV();
-};
+  if(level){
+    initAudio();           // unlock audio (aman di HP)
+    loadInternalCSV(level);
+  }
+});
 </script>
 
 </body>
 </html>
+
 
 
 
