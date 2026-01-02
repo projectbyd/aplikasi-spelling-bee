@@ -417,73 +417,6 @@ th:nth-child(4),td:nth-child(4){width:20%;}
 }
 
 /* START MESSAGE */
-#startMessage{
-  position:fixed;
-  top:50%;
-  left:50%;
-  transform:translate(-50%, -50%);
-  z-index:1500;
-
-  width:85%;
-  max-width:360px;
-
-  text-align:center;
-  padding:26px;
-  background:#f9f4d2;
-  border-radius:28px;
-  
-  font-size:17px;
-  font-weight:900;
-  color:#38b6ff;
-
-  cursor:pointer;
-  transition:.25s ease;
-}
-
-
-#startMessage:hover{
-  transform:translate(-50%, -50%) scale(1.03);
-  background:#f0fdf9;
-}
-
-#startMessage span{
-  display:block;
-  margin-top:8px;
-  font-size:14px;
-  opacity:.6;
-}
-
-  #startMessage.hidden {
-  display: none;
-  pointer-events: none;
-}
-
-#csvError{
-  margin:200px auto 40px;
-  max-width:320px;
-  background:#ffe5e5;
-  color:#7a0000;
-  padding:16px;
-  border-radius:18px;
-  font-weight:800;
-  text-align:center;
-  box-shadow:0 6px 14px rgba(0,0,0,.12);
-  display:none;
-  position: relative;
-  z-index: 3000;      /* LEBIH TINGGI dari startMessage */
-  pointer-events: auto;
-}
-.retryUpload{
-  display:inline-block;
-  margin-top:12px;
-  padding:10px 16px;
-  border-radius:14px;
-  background:#f2e590;
-  color:#38b6ff;
-  font-weight:900;
-  cursor:pointer;
-  box-shadow:0 4px 10px rgba(0,0,0,.12);
-}
   
 @media (orientation: landscape) and (min-width: 768px){
 
@@ -563,24 +496,6 @@ th:nth-child(4),td:nth-child(4){width:20%;}
     
   
 <!-- TABLE -->
-<!-- START MESSAGE -->
-<div id="startMessage" onclick="triggerUpload()">
-  <div class="box">
-    📂 <b>Upload a file  to start practice</b>
-       <span>Unggah dokumen CSV untuk memulai latihan Spelling Bee</span>
-  </div>
-</div>
-</label>
-
-<div id="csvError" onclick="triggerUpload()">
-  ⚠️ File tidak sesuai format  
-  <br><br>
-  <small>
-    Pastikan format file .CSV dan <br>format kolom: No, Word, Sentence  
-    <br><br><i><b>tap disini untuk upload ulang file</i></b>
-  </small>
-</div>
-  
 <div class="wrapper">
 <table>
 <thead id="tableHead">
@@ -652,6 +567,9 @@ th:nth-child(4),td:nth-child(4){width:20%;}
 </div>
 
 <script>
+const params = new URLSearchParams(window.location.search);
+const level = params.get("level"); // level1, level2, dst
+
 let rows=[], current=0, playing=false, paused=false;
 let timerInterval=null;
 let audioCtx = null;
@@ -722,53 +640,8 @@ function timer20(){
   });
 }
 
-/* CSV */
-function loadCSV(e){
 
-  // RESET
-  document.getElementById("csvError").style.display = "none";
-  document.getElementById("startMessage").style.display = "none";
 
-  rows = [];
-  current = 0;
-  tbody.innerHTML = "";
-
-  stopAll();
-
-  const file = e.target.files[0];
-  if(!file) return;
-
-  const r = new FileReader();
-  r.onload = () => {
-    const lines = r.result.trim().split("\n").map(l => l.split(","));
-
-    // ❌ CSV SALAH
-    if(lines.length < 2 || lines[0].length < 3){
-      document.getElementById("csvError").style.display = "block";
-      return;
-    }
-
-    // ✅ CSV BENAR
-    lines.shift();
-    rows = lines;
-
-    render();
-
-    document.getElementById("tableHead").style.display = "table-header-group";
-    document.getElementById("topBtns").classList.remove("hiddenTop");
-    document.getElementById("timer").style.display = "flex";
-    document.getElementById("instructionBtn").style.display = "flex";
-    document.getElementById("bottomUpload").style.display = "flex";
-  };
-
-  r.readAsText(file);
-  e.target.value = "";
-}
-
-function triggerUpload(){
-  const input = document.getElementById("fileInput");
-  input.value = ""; // 🔑 reset agar bisa upload file sama
-  input.click();
 }
 function render(){
   tbody.innerHTML="";
@@ -904,7 +777,24 @@ document.addEventListener("click", function(e){
 function getParam(name){
   return new URLSearchParams(window.location.search).get(name);
 }
-  
+
+async function loadLevelCSV(){
+  const res = await fetch(data/${level}.csv);
+  const text = await res.text();
+
+  const lines = text.trim().split("\n").map(l=>l.split(","));
+  lines.shift(); // buang header
+
+  rows = lines;
+  render();
+
+  // tampilkan UI sama seperti upload sukses
+  document.getElementById("topBtns").classList.remove("hiddenTop");
+  document.getElementById("tableHead").style.display="table-header-group";
+  document.getElementById("timer").style.display="flex";
+  document.getElementById("instructionBtn").style.display="flex";
+}
+ 
 async function loadInternalCSV(level){
   stopAll();
   rows = [];
@@ -919,7 +809,6 @@ async function loadInternalCSV(level){
 
   render();
 
-  document.getElementById("startMessage").style.display = "none";
   document.getElementById("bottomUpload").style.display = "none";
   document.getElementById("topBtns").classList.remove("hiddenTop");
   document.getElementById("timer").style.display = "flex";
@@ -940,17 +829,41 @@ async function loadInternalCSV(level){
     // mode upload manual tetap pakai UI lama
   }
 };
+const params = new URLSearchParams(window.location.search);
+const level = params.get("level");
 
+if(level){
+  loadLevelCSV(level);
+}
+
+async function loadLevelCSV(level){
+  initAudio();
+
+  const res = await fetch(data/level${level}.csv);
+  const text = await res.text();
+
+  const lines = text.trim().split("\n").map(l=>l.split(","));
+  lines.shift(); // buang header
+
+  rows = lines;
+  render();
+
+  // tampilkan UI sama seperti upload berhasil
+  document.getElementById("topBtns").classList.remove("hiddenTop");
+  document.getElementById("tableHead").style.display="table-header-group";
+  document.getElementById("bottomUpload").style.display="none";
+  document.getElementById("instructionBtn").style.display="flex";
+  document.getElementById("timer").style.display="flex";
+}
+window.onload = () => {
+  initAudio();
+  loadLevelCSV();
+};
 </script>
-<input type="file"
-       id="fileInput"
-       accept=".csv"
-       style="display:none"
-       onchange="loadCSV(event)">
 
-  
 </body>
 </html>
+
 
 
 
