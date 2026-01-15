@@ -130,6 +130,8 @@ html,body{
   max-width:420px;
   line-height:1.4;
 }
+
+<button class="bottom-btn" onclick="logout()">🚪 Logout</button>
 </style>
 </head>
 
@@ -137,7 +139,7 @@ html,body{
 <div class="app">
 
   <!-- JUDUL APLIKASI -->
-  <h1 id="appTitle">SPELLING BEE</h1>
+  <h1 id="welcomeTitle">Welcome,</h1>
 
   <p id="appTagline">
     Aplikasi interaktif untuk membantu latihan Spelling Bee dengan
@@ -184,6 +186,20 @@ function goGuided(){
 }
 </script>
 <script src="js/auth-check.js"></script>
+
+<script>
+const name = localStorage.getItem("sb_name");
+if(name){
+  document.getElementById("welcomeTitle").textContent =
+    "Welcome, " + name;
+}
+
+function logout(){
+  localStorage.clear();
+  location.href="login.html";
+}
+</script>
+
 </body>
 </html>
 
