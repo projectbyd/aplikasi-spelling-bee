@@ -104,5 +104,23 @@ async function login(){
   }
 }
 </script>
+<input id="email" type="email" placeholder="Masukkan email">
+<button onclick="login()">MASUK</button>
+
+<script>
+function login(){
+  const email = document.getElementById("email").value.trim();
+  if (!email) {
+    alert("Isi email");
+    return;
+  }
+
+  localStorage.setItem("sb_email", email);
+  localStorage.removeItem("sb_auth");
+
+  location.href = "index.html";
+}
+</script>
+  
 </body>
 </html>
