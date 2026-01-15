@@ -3,6 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <title>SPELLING BEE</title>
+<script>
+if(localStorage.getItem("sb_auth") !== "ok"){
+  location.href = "login.html";
+}
+</script>
+
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -833,6 +840,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
 
 </body>
 </html>
+
 
 
 
