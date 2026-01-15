@@ -2,47 +2,60 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Spelling Bee Login</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - Spelling Bee</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Comfortaa&display=swap" rel="stylesheet">
 
 <style>
-body{
+html,body{
   margin:0;
-  min-height:100vh;
+  padding:0;
+  height:100%;
+  font-family:'Comfortaa', sans-serif;
+}
+
+body{
+  background:#eef6f1;
   display:flex;
   align-items:center;
   justify-content:center;
-  background:#eef6f1;
-  font-family:'Comfortaa', sans-serif;
 }
-.box{
+
+.card{
   width:100%;
   max-width:360px;
-  padding:24px;
+  background:#ffffff;
+  border-radius:24px;
+  padding:28px 22px;
+  box-shadow:0 10px 30px rgba(0,0,0,.15);
   text-align:center;
 }
-h1{
+
+.card h1{
   font-family:'Henny Penny', cursive;
+  font-size:34px;
   color:#38b6ff;
-  font-size:36px;
   margin-bottom:8px;
 }
-p{
-  font-size:14px;
+
+.card p{
+  font-size:13px;
+  color:#38b6ff;
   margin-bottom:20px;
-  color:#444;
 }
+
 input{
   width:100%;
   height:48px;
   border-radius:18px;
-  border:2px solid #fff;
-  padding:0 14px;
-  font-size:15px;
+  border:2px solid #edf4dc;
+  padding:0 16px;
   margin-bottom:14px;
+  font-size:14px;
+  font-weight:700;
 }
+
 button{
   width:100%;
   height:48px;
@@ -50,35 +63,39 @@ button{
   border-radius:18px;
   background:#f2e590;
   color:#38b6ff;
-  font-weight:900;
   font-size:16px;
+  font-weight:900;
 }
-#error{
-  margin-top:12px;
-  font-size:13px;
-  color:#ef476f;
+
+.footer{
+  margin-top:14px;
+  font-size:11px;
+  color:#aaa;
 }
 </style>
 </head>
 
 <body>
-<div class="box">
-  <h1>SPELLING BEE</h1>
-  <p>Masukkan email terdaftar untuk melanjutkan</p>
 
-  <input id="email" type="email" placeholder="email@example.com">
+<div class="card">
+  <h1>Spelling Bee</h1>
+  <p>Masuk untuk mulai belajar</p>
+
+  <input id="nameInput" placeholder="Nama Anak">
+  <input id="emailInput" placeholder="Email Terdaftar">
+
   <button onclick="login()">MASUK</button>
 
-  <div id="error"></div>
+  <div class="footer">© Spelling Bee</div>
 </div>
 
 <script>
 async function login(){
-  const email = document.getElementById("email").value.trim().toLowerCase();
-  const error = document.getElementById("error");
+  const name  = nameInput.value.trim();
+  const email = emailInput.value.trim().toLowerCase();
 
-  if(!email){
-    error.textContent = "Email wajib diisi";
+  if(!name || !email){
+    alert("Nama & Email wajib diisi");
     return;
   }
 
@@ -86,41 +103,28 @@ async function login(){
     const res = await fetch("data/users.csv");
     const text = await res.text();
 
-    const rows = text
+    const list = text
+      .trim()
       .split(/\r?\n/)
-      .map(r => r.trim())
-      .filter(r => r);
+      .slice(1)
+      .map(e=>e.trim().toLowerCase());
 
-    rows.shift(); // hapus header
-
-    if(rows.includes(email)){
-      localStorage.setItem("sb_auth","ok");
-      location.href = "index.html";
-    }else{
-      error.textContent = "Email tidak terdaftar";
+    if(!list.includes(email)){
+      alert("Email tidak terdaftar");
+      return;
     }
+
+    localStorage.setItem("sb_auth","ok");
+    localStorage.setItem("sb_name",name);
+    localStorage.setItem("sb_email",email);
+
+    location.href="index.html";
+
   }catch(e){
-    error.textContent = "Gagal memuat data";
+    alert("Gagal memuat data");
   }
 }
 </script>
-<input id="email" type="email" placeholder="Masukkan email">
-<button onclick="login()">MASUK</button>
 
-<script>
-function login(){
-  const email = document.getElementById("email").value.trim();
-  if (!email) {
-    alert("Isi email");
-    return;
-  }
-
-  localStorage.setItem("sb_email", email);
-  localStorage.removeItem("sb_auth");
-
-  location.href = "index.html";
-}
-</script>
-  
 </body>
 </html>
