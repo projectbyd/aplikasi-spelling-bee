@@ -72,6 +72,18 @@ button{
   color:#38b6ff;
   cursor:pointer;
 }
+.back-btn{
+  width:100%;
+  height:44px;
+  margin-top:16px;
+  border:none;
+  border-radius:18px;
+  background:#edf4dc;
+  color:#38b6ff;
+  font-weight:900;
+  cursor:pointer;
+}
+
 #status{
   margin-top:16px;
   font-weight:900;
@@ -87,21 +99,6 @@ button{
   display:none;
 }
 
-#backBtn{
-  position:fixed;
-  bottom:16px;
-  left:50%;
-  transform:translateX(-50%);
-  width:calc(100% - 32px);
-  max-width:360px;
-  height:44px;
-  border:none;
-  border-radius:18px;
-  background:#edf4dc;
-  color:#38b6ff;
-  font-weight:900;
-  z-index:999;
-}
 
 </style>
 </head>
@@ -122,6 +119,10 @@ button{
   </select>
 
   <button onclick="startPractice()">START PRACTICE</button>
+  
+  <button class="back-btn" onclick="goHome()">
+  ⬅ Kembali ke Menu Utama
+</button>
 </div>
 
 <!-- ===== SCREEN 2 : PRACTICE ===== -->
@@ -135,6 +136,10 @@ button{
   <button id="submitBtn" onclick="submitAnswer()">SUBMIT</button>
 
   <div id="status"></div>
+  
+  <button class="back-btn" onclick="goHome()">
+  ⬅ Kembali ke Menu Utama
+</button>
 </div>
   
 <!-- 3. HALAMAN REVIEW JAWABAN -->
@@ -161,11 +166,6 @@ button{
   </section>
 <script src="js/practice.js"></script>
 
-
-<!-- 🔙 TOMBOL KEMBALI (SELALU DI BAWAH LAYAR) -->
-<button id="backBtn" onclick="goHome()">
-  ⬅ Kembali ke Menu Utama
-</button>
 
 </body>
 </html>
