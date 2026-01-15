@@ -1,24 +1,39 @@
-(function(){
-  let devtoolsOpen = false;
+(async function(){
 
-  const threshold = 160;
+  // 1. jika sudah lolos, stop
+  if (localStorage.getItem("sb_auth") === "ok") return;
 
-  setInterval(() => {
-    const widthDiff = window.outerWidth - window.innerWidth;
-    const heightDiff = window.outerHeight - window.innerHeight;
+  // 2. cek email
+  const email = localStorage.getItem("sb_email");
+  if (!email) {
+    location.href = "login.html";
+    return;
+  }
 
-    if (widthDiff > threshold || heightDiff > threshold) {
-      if (!devtoolsOpen) {
-        devtoolsOpen = true;
-        alert("Akses diblokir");
-        location.href = "login.html";
-      }
+  try {
+    // 3. load users.csv
+    const res = await fetch("data/users.csv");
+    if (!res.ok) throw new Error("csv not found");
+
+    const text = await res.text();
+    const list = text
+      .trim()
+      .split(/\r?\n/)
+      .slice(1) // buang header
+      .map(r => r.trim().toLowerCase());
+
+    // 4. validasi
+    if (list.includes(email.toLowerCase())) {
+      localStorage.setItem("sb_auth", "ok");
     } else {
-      devtoolsOpen = false;
+      alert("Email tidak terdaftar");
+      localStorage.clear();
+      location.href = "login.html";
     }
-  }, 1000);
-})();
 
-if (localStorage.getItem("sb_auth") !== "ok") {
-  window.location.href = "login.html";
-}
+  } catch (e) {
+    alert("Gagal memuat data user");
+    location.href = "login.html";
+  }
+
+})();
