@@ -352,3 +352,7 @@ function exportPDF(){
 function restartPractice(){
   location.reload();
 }
+
+function goHome(){
+  window.location.href = "index.html";
+}
