@@ -4,11 +4,9 @@
 <meta charset="UTF-8">
 <title>SPELLING BEE</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script>
-if(localStorage.getItem("sb_auth") !== "ok"){
-  location.href = "login.html";
-}
-</script>
+
+<!-- 🔐 AUTH CHECK -->
+<script src="auth-check.js"></script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -956,6 +954,7 @@ async function loadInternalCSV(level){
   
 </body>
 </html>
+
 
 
 
