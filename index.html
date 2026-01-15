@@ -111,7 +111,7 @@ html,body{
 <body>
 <div class="app">
 
-  <h1 id="welcomeTitle"><b>Hi!,</b></h1>
+  <h1 id="welcomeTitle"><b>Hi,</b></h1>
 
   <p id="appTagline">
     Selamat datang di aplikasi interaktif untuk membantu latihan Spelling Bee dengan cara menyenangkan.
@@ -148,7 +148,7 @@ function goGuided(){
 const name = localStorage.getItem("sb_name");
 if(name){
   document.getElementById("welcomeTitle").textContent =
-    "Welcome, " + name;
+    "Hi, " + name;
 }
 
 function logout(){
