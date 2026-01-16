@@ -112,6 +112,7 @@ async function startPractice(){
   reviewSection.classList.add("hidden");
 
   await readyCountdown();
+  await wait(1000);
   playQuestion();
 }
 
