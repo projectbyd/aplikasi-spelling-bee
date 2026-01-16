@@ -90,6 +90,7 @@ async function loadQuestions(){
 
 /* ===== START PRACTICE ===== */
 async function startPractice(){
+  alert("START PRACTICE TERPANGGIL");
   unlockAudio();
 
   const name  = studentName.value.trim();
