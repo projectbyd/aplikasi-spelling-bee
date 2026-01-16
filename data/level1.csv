@@ -1,303 +1,301 @@
 no,word,sentence
-1,cat,The cat is sleeping
-2,dog,My dog is very friendly
-3,sun,The sun is bright today
-4,moon,The moon shines at night
-5,star,I see a star in the sky
-6,ball,I kick the ball
-7,book,She reads a book
-8,pen,This is my pen
-9,hat,He wears a red hat.
-10,cup,I drink from the cup.
-11,bed,I sleep on my bed.
-12,car,The car is fast.
-13,bus,I ride the bus to school.
-14,fish,The fish swims in water.
-15,bird,A bird is singing.
-16,tree,The tree is tall.
-17,flower,The flower is beautiful.
-18,milk,I drink milk every day.
-19,cake,The cake is sweet.
-20,egg,I eat an egg for breakfast.
-21,apple,The apple is red.
-22,banana,I like banana.
-23,rice,We eat rice for lunch.
-24,bread,She eats bread.
-25,water,Please drink water.
-26,baby,The baby is smiling.
-27,boy,The boy runs fast.
-28,girl,The girl is happy.
-29,mom,My mom cooks food.
-30,dad,My dad works hard.
-31,hand,Wash your hand.
-32,foot,My foot hurts.
-33,eye,Close your eye.
-34,nose,My nose is cold.
-35,ear,My ear can hear music.
-36,mouth,Open your mouth.
-37,red,The apple is red.
-38,blue,The sky is blue.
-39,green,The leaf is green.
-40,yellow,The sun is yellow.
-41,big,The house is big.
-42,small,The ant is small.
-43,hot,The soup is hot.
-44,cold,The ice is cold.
-45,happy,I feel happy today.
-46,sad,She feels sad.
-47,run,I run in the park.
-48,jump,The cat can jump.
-49,walk,We walk to school.
-50,sit,Please sit down.
-51,stand,Stand in line.
-52,play,We play together.
-53,read,I read a book.
-54,write,I write my name.
-55,draw,I draw a picture.
-56,sing,She likes to sing.
-57,eat,I eat lunch.
-58,sleep,I sleep at night.
-59,laugh,We laugh together.
-60,cry,The baby can cry.
-61,rain,The rain is falling.
-62,cloud,The cloud is white.
-63,wind,The wind is strong.
-64,day,Today is a sunny day.
-65,night,I sleep at night.
-66,school,I go to school.
-67,class,Our class is fun.
-68,teacher,The teacher is kind.
-69,friend,My friend helps me.
-70,bag,My bag is heavy.
-71,shoe,My shoe is new.
-72,sock,I wear a sock.
-73,door,Close the door.
-74,window,Open the window.
-75,house,This is my house.
-76,road,The road is long.
-77,park,We play in the park.
-78,toy,This toy is fun.
-79,game,We play a game.
-80,doll,She has a doll.
-81,bike,I ride a bike.
-82,train,The train is fast.
-83,boat,The boat is on water.
-84,beach,I play at the beach.
-85,sand,The sand is soft.
-86,smile,She gives a smile.
-87,help,I help my mom.
-88,love,I love my family.
-89,lion,The lion roared loudly at the zoo.
-90,tiger,The tiger walked quietly in the jungle.
-91,bear,The bear looked for honey.
-92,horse,The horse ran across the field.
-93,cow,The cow eats grass every day.
-94,sheep,The sheep has soft white wool.
-95,goat,The goat climbed the small hill.
-96,duck,The duck swam in the pond.
-97,frog,The frog jumped into the water.
-98,snake,The snake slid across the ground.
-99,monkey,The monkey grabbed a banana.
-100,panda,The panda ate bamboo slowly.
-101,rabbit,The rabbit hid behind the bush.
-102,mouse,The mouse ran into a tiny hole.
-103,turtle,The turtle moved very slowly.
-104,pizza,We shared a big pizza at dinner.
-105,cookie,The cookie smelled sweet and warm.
-106,candy,She saved her candy for later.
-107,ice,The ice melted in the sun.
-108,soup,The soup warmed my hands.
-109,spoon,He stirred the soup with a spoon.
-110,plate,The plate was full of food.
-111,lunch,Lunch time is my favorite time.
-112,dinner,We eat dinner together every night.
-113,snack,I packed a snack for school.
-114,rain,The rain danced on the roof.
-115,snow,The snow covered the yard.
-116,storm,The storm made loud sounds.
-117,sky,The sky turned pink at sunset.
-118,light,The light shined in the dark room.
-119,fire,The fire kept us warm.
-120,hill,We rolled down the hill laughing.
-121,river,The river flowed quietly.
-122,lake,The lake looked calm and blue.
-123,sea,The sea touched my feet.
-124,sand,The sand slipped through my fingers.
-125,shell,I found a shell on the beach.
-126,kite,My kite flew high in the sky.
-127,swing,I swung higher and higher.
-128,slide,The slide was fast and fun.
-129,game,We played a fun game together.
-130,hide,Let’s hide behind the tree.
-131,seek,We played hide and seek.
-132,run,I ran as fast as I could.
-133,jump,I jumped over the puddle.
-134,climb,We climbed the big rock.
-135,laugh,We laughed until our bellies hurt.
-136,smile,Her smile made me happy.
-137,dream,I dream about flying.
-138,magic,The magic trick surprised everyone.
-139,hero,The hero saved the day.
-140,king,The king wore a golden crown.
-141,queen,The queen waved to the people.
-142,crown,The crown sparkled in the light.
-143,castle,The castle stood on the hill.
-144,dragon,The dragon breathed fire in the story.
-145,fairy,The fairy sprinkled magic dust.
-146,wizard,The wizard waved his wand.
-147,story,The story took us to another world.
-148,page,I turned the page slowly.
-149,pencil,My pencil rolled off the desk.
-150,paper,I folded the paper into a boat.
-151,color,I chose my favorite color.
-152,paint,We painted a rainbow.
-153,brush,The brush made soft lines.
-154,music,The music made me dance.
-155,drum,He beat the drum loudly.
-156,bell,The bell rang for class.
-157,song,We sang a happy song.
-158,dance,We danced in the living room.
-159,clap,Everyone clapped their hands.
-160,shout,We shouted with joy.
-161,quiet,The room became quiet.
-162,fast,The car moved fast.
-163,slow,The snail is slow.
-164,clean,I cleaned my room.
-165,messy,My desk looked messy.
-166,bright,The stars were bright tonight.
-167,dark,The room was dark and quiet.
-168,warm,The sun felt warm.
-169,cool,The breeze felt cool.
-170,sweet,The cake tasted sweet.
-171,fun,The trip was fun.
-172,help,I helped my friend.
-173,share,We share our toys.
-174,thank,I said thank you with a smile.
-175,love,I love my family.
-176,puppy,The puppy chased its own tail.
-177,kitten,The kitten slept in a warm box.
-178,chick,The yellow chick followed its mother.
-179,calf,The calf stayed close to the cow.
-180,pony,The pony carried the child gently.
-181,owl,The owl hooted at night.
-182,crow,The crow sat on the tall tree.
-183,swan,The swan glided across the lake.
-184,bee,A bee buzzed around the flower.
-185,ant,The ant carried a big crumb.
-186,leaf,A leaf fell slowly to the ground.
-187,seed,I planted a seed in the soil.
-188,grass,The grass felt cool under my feet.
-189,root,The root grows under the ground.
-190,branch,A bird sat on the branch.
-191,fruit,The fruit tasted fresh and sweet.
-192,juice,I drank cold juice after playing.
-193,honey,The honey dripped slowly.
-194,butter,The butter melted on warm bread.
-195,cheese,The cheese smelled delicious.
-196,bowl,The bowl was full of soup.
-197,knife,The knife cut the apple.
-198,fork,I picked up food with a fork.
-199,table,The table was set for dinner.
-200,chair,I pulled the chair closer.
-201,clock,The clock ticked all night.
-202,watch,I checked my watch.
-203,bell,The bell rang loudly.
-204,whistle,The whistle made a sharp sound.
-205,flag,The flag waved in the wind.
-206,map,The map showed the long road.
-207,path,We followed the forest path.
-208,bridge,The bridge crossed the river.
-209,tunnel,The train entered the tunnel.
-210,fence,The fence kept the animals safe.
-211,field,The field was wide and green.
-212,farm,We visited a farm today.
-213,barn,The barn smelled like hay.
-214,wagon,The wagon rolled slowly.
-215,wheel,The wheel turned fast.
-216,rope,He climbed using a rope.
-217,box,I hid the toy in a box.
-218,bag,My bag felt heavy.
-219,gift,She opened her gift happily.
-220,card,I made a card for my mom.
-221,letter,I wrote a letter to my friend.
-222,stamp,I stuck a stamp on the letter.
-223,mail,The mail came in the afternoon.
-224,phone,The phone rang loudly.
-225,radio,The radio played music.
-226,photo,I looked at an old photo.
-227,camera,The camera flashed brightly.
-228,screen,The screen showed a cartoon.
-229,light,The light flickered softly.
-230,shadow,My shadow followed me.
-231,mirror,I saw my face in the mirror.
-232,towel,I dried my hands with a towel.
-233,soap,The soap smelled nice.
-234,brush,I brushed my hair slowly.
-235,comb,The comb slipped from my hand.
-236,shirt,I wore my blue shirt.
-237,pants,My pants got muddy.
-238,socks,My socks were warm.
-239,shoes,My shoes were wet.
-240,jacket,I put on my jacket.
-241,hat,The hat flew away.
-242,gloves,I wore gloves in winter.
-243,scarf,The scarf kept my neck warm.
-244,raincoat,My raincoat kept me dry.
-245,umbrella,The umbrella opened quickly.
-246,puddle,I jumped in a puddle.
-247,splash,Water made a splash.
-248,muddy,My shoes were muddy.
-249,windy,The day was windy.
-250,fog,The fog covered the road.
-251,sunny,It was a sunny day.
-252,chilly,The morning felt chilly.
-253,early,I woke up early.
-254,late,We arrived late.
-255,ready,I am ready to go.
-256,tired,I felt tired after playing.
-257,excited,I was excited for the trip.
-258,brave,The brave child tried again.
-259,kind,She was kind to everyone.
-260,fair,The teacher was fair.
-261,honest,He was honest about the mistake.
-262,silly,We made silly faces.
-263,proud,I felt proud of my work.
-264,smile,Her smile made everyone happy.
-265,hug,I gave my mom a warm hug.
-266,wave,We wave to our friends.
-267,shout,The kids shout with joy.
-268,whisper,He whispered a secret.
-269,cheer,The crowd began to cheer.
-270,clap,We clap after the show.
-271,rest,I rest under the tree.
-272,dream,I dream about flying high.
-273,wish,I made a wish on a star.
-274,hope,I hope today is fun.
-275,help,I help my friend carry books.
-276,share,We share our snacks.
-277,give,I give my toy to my brother.
-278,take,Please take your bag.
-279,bring,Bring your hat outside.
-280,find,I find a shell on the sand.
-281,lose,Do not lose your pencil.
-282,build,We build a sandcastle.
-283,fix,Dad helps fix the bike.
-284,make,I make a paper plane.
-285,draw,I draw a funny face.
-286,write,I write my name neatly.
-287,count,We count the stars.
-288,sing,We sing together.
-289,dance,We dance to the music.
-290,play,We play in the park.
-291,learn,I learn new words.
-292,think,I think about my dream.
-293,look,Look at the rainbow.
-294,listen,Listen to the birds.
-295,watch,Watch the clouds move.
-296,feel,I feel happy today.
-297,taste,I taste sweet candy.
-298,smell,I smell fresh flowers.
-299,touch,Touch the soft fur.
-300,enjoy,I enjoy the sunny day.
-
-
+1,cat,the cat is sleeping.
+2,dog,my dog is very friendly.
+3,sun,the sun is bright today.
+4,moon,the moon shines at night.
+5,star,i see a star in the sky.
+6,ball,i kick the ball.
+7,book,she reads a book.
+8,pen,this is my pen
+9,cup,i drink from the cup.
+10,bed,i sleep on my bed.
+11,car,the car is fast.
+12,bus,i ride the bus to school.
+13,fish,the fish swims in water.
+14,bird,a bird is singing.
+15,tree,the tree is tall.
+16,flower,the flower is beautiful.
+17,milk,i drink milk every day.
+18,cake,the cake is sweet.
+19,egg,i eat an egg for breakfast.
+20,apple,the apple is red.
+21,banana,i like banana.
+22,rice,we eat rice for lunch.
+23,bread,she eats bread.
+24,water,please drink water.
+25,baby,the baby is smiling.
+26,boy,the boy runs fast.
+27,girl,the girl is happy.
+28,mom,my mom cooks food.
+29,dad,my dad works hard.
+30,hand,wash your hand.
+31,foot,my foot hurts.
+32,eye,close your eye.
+33,nose,my nose is cold.
+34,ear,my ear can hear music.
+35,mouth,open your mouth.
+36,red,the apple is red.
+37,blue,the sky is blue.
+38,green,the leaf is green.
+39,yellow,the sun is yellow.
+40,big,the house is big.
+41,small,the ant is small.
+42,hot,the soup is hot.
+43,cold,the ice is cold.
+44,happy,i feel happy today.
+45,sad,she feels sad.
+46,walk,we walk to school.
+47,sit,please sit down.
+48,stand,stand in line.
+49,read,i read a book.
+50,draw,i draw a picture.
+51,eat,i eat lunch.
+52,sleep,i sleep at night.
+53,cry,the baby can cry.
+54,cloud,the cloud is white.
+55,wind,the wind is strong.
+56,day,today is a sunny day.
+57,night,i sleep at night.
+58,school,i go to school.
+59,class,our class is fun.
+60,teacher,the teacher is kind.
+61,friend,my friend helps me.
+62,oven,my oven is new.
+63,sock,i wear a sock.
+64,door,close the door.
+65,window,open the window.
+66,house,this is my house.
+67,road,the road is long.
+68,park,we play in the park.
+69,toy,this toy is fun.
+70,doll,she has a doll.
+71,bike,i ride a bike.
+72,train,the train is fast.
+73,boat,the boat is on water.
+74,beach,i play at the beach.
+75,lion,the lion roared loudly at the zoo.
+76,tiger,the tiger walked quietly in the jungle.
+77,bear,the bear looked for honey.
+78,horse,the horse ran across the field.
+79,cow,the cow eats grass every day.
+80,sheep,the sheep has soft white wool.
+81,goat,the goat climbed the small hill.
+82,duck,the duck swam in the pond.
+83,frog,the frog jumped into the water.
+84,snake,the snake slid across the ground.
+85,monkey,the monkey grabbed a banana.
+86,panda,the panda ate bamboo slowly.
+87,rabbit,the rabbit hid behind the bush.
+88,mouse,the mouse ran into a tiny hole.
+89,turtle,the turtle moved very slowly.
+90,pizza,we shared a big pizza at dinner.
+91,cookie,the cookie smelled sweet and warm.
+92,candy,she saved her candy for later.
+93,ice,the ice melted in the sun.
+94,soup,the soup warmed my hands.
+95,spoon,he stirred the soup with a spoon.
+96,plate,the plate was full of food.
+97,lunch,lunch time is my favorite time.
+98,dinner,we eat dinner together every night.
+99,snack,i packed a snack for school.
+100,rain,the rain danced on the roof.
+101,snow,the snow covered the yard.
+102,storm,the storm made loud sounds.
+103,sky,the sky turned pink at sunset.
+104,fire,the fire kept us warm.
+105,hill,we rolled down the hill laughing.
+106,river,the river flowed quietly.
+107,lake,the lake looked calm and blue.
+108,sea,the sea touched my feet.
+109,sand,the sand slipped through my fingers.
+110,shell,i found a shell on the beach.
+111,kite,my kite flew high in the sky.
+112,swing,i swung higher and higher.
+113,slide,the slide was fast and fun.
+114,game,we played a fun game together.
+115,hide,letâ€™s hide behind the tree.
+116,seek,we played hide and seek.
+117,run,i ran as fast as i could.
+118,jump,i jumped over the puddle.
+119,climb,we climbed the big rock.
+120,laugh,we laughed until our bellies hurt.
+121,magic,the magic trick surprised everyone.
+122,hero,the hero saved the day.
+123,king,the king wore a golden crown.
+124,queen,the queen waved to the people.
+125,crown,the crown sparkled in the light.
+126,castle,the castle stood on the hill.
+127,dragon,the dragon breathed fire in the story.
+128,fairy,the fairy sprinkled magic dust.
+129,wizard,the wizard waved his wand.
+130,story,the story took us to another world.
+131,page,i turned the page slowly.
+132,pencil,my pencil rolled off the desk.
+133,paper,i folded the paper into a boat.
+134,color,i chose my favorite color.
+135,paint,we painted a rainbow.
+136,music,the music made me dance.
+137,drum,he beat the drum loudly.
+138,song,we sang a happy song.
+139,quiet,the room became quiet.
+140,fast,the car moved fast.
+141,slow,the snail is slow.
+142,clean,i cleaned my room.
+143,messy,my desk looked messy.
+144,bright,the stars were bright tonight.
+145,dark,the room was dark and quiet.
+146,warm,the sun felt warm.
+147,cool,the breeze felt cool.
+148,sweet,the cake tasted sweet.
+149,fun,the trip was fun.
+150,thank,i said thank you with a smile.
+151,love,i love my family.
+152,puppy,the puppy chased its own tail.
+153,kitten,the kitten slept in a warm box.
+154,chick,the yellow chick followed its mother.
+155,calf,the calf stayed close to the cow.
+156,pony,the pony carried the child gently.
+157,owl,the owl hooted at night.
+158,crow,the crow sat on the tall tree.
+159,swan,the swan glided across the lake.
+160,bee,a bee buzzed around the flower.
+161,ant,the ant carried a big crumb.
+162,leaf,a leaf fell slowly to the ground.
+163,seed,i planted a seed in the soil.
+164,grass,the grass felt cool under my feet.
+165,root,the root grows under the ground.
+166,branch,a bird sat on the branch.
+167,fruit,the fruit tasted fresh and sweet.
+168,juice,i drank cold juice after playing.
+169,honey,the honey dripped slowly.
+170,butter,the butter melted on warm bread.
+171,cheese,the cheese smelled delicious.
+172,bowl,the bowl was full of soup.
+173,knife,the knife cut the apple.
+174,fork,i picked up food with a fork.
+175,table,the table was set for dinner.
+176,chair,i pulled the chair closer.
+177,clock,the clock ticked all night.
+178,bell,the bell rang loudly.
+179,whistle,the whistle made a sharp sound.
+180,flag,the flag waved in the wind.
+181,map,the map showed the long road.
+182,path,we followed the forest path.
+183,bridge,the bridge crossed the river.
+184,tunnel,the train entered the tunnel.
+185,fence,the fence kept the animals safe.
+186,field,the field was wide and green.
+187,farm,we visited a farm today.
+188,barn,the barn smelled like hay.
+189,wagon,the wagon rolled slowly.
+190,wheel,the wheel turned fast.
+191,rope,he climbed using a rope.
+192,box,i hid the toy in a box.
+193,bag,my bag felt heavy.
+194,gift,she opened her gift happily.
+195,card,i made a card for my mom.
+196,letter,i wrote a letter to my friend.
+197,stamp,i stuck a stamp on the letter.
+198,mail,the mail came in the afternoon.
+199,phone,the phone rang loudly.
+200,radio,the radio played music.
+201,photo,i looked at an old photo.
+202,camera,the camera flashed brightly.
+203,screen,the screen showed a cartoon.
+204,light,the light flickered softly.
+205,shadow,my shadow followed me.
+206,mirror,i saw my face in the mirror.
+207,towel,i dried my hands with a towel.
+208,soap,the soap smelled nice.
+209,brush,i brushed my hair slowly.
+210,comb,the comb slipped from my hand.
+211,shirt,i wore my blue shirt.
+212,pants,my pants got muddy.
+213,socks,my socks were warm.
+214,shoes,my shoes were wet.
+215,jacket,i put on my jacket.
+216,hat,the hat flew away.
+217,gloves,i wore gloves in winter.
+218,scarf,the scarf kept my neck warm.
+219,raincoat,my raincoat kept me dry.
+220,umbrella,the umbrella opened quickly.
+221,puddle,i jumped in a puddle.
+222,splash,water made a splash.
+223,muddy,my shoes were muddy.
+224,windy,the day was windy.
+225,fog,the fog covered the road.
+226,sunny,it was a sunny day.
+227,chilly,the morning felt chilly.
+228,early,i woke up early.
+229,late,we arrived late.
+230,ready,i am ready to go.
+231,tired,i felt tired after playing.
+232,excited,i was excited for the trip.
+233,brave,the brave child tried again.
+234,kind,she was kind to everyone.
+235,fair,the teacher was fair.
+236,honest,he was honest about the mistake.
+237,silly,we made silly faces.
+238,proud,i felt proud of my work.
+239,smile,her smile made everyone happy.
+240,hug,i gave my mom a warm hug.
+241,wave,we wave to our friends.
+242,shout,the kids shout with joy.
+243,whisper,he whispered a secret.
+244,cheer,the crowd began to cheer.
+245,clap,we clap after the show.
+246,rest,i rest under the tree.
+247,dream,i dream about flying high.
+248,wish,i made a wish on a star.
+249,hope,i hope today is fun.
+250,help,i help my friend carry books.
+251,share,we share our snacks.
+252,give,i give my toy to my brother.
+253,take,please take your bag.
+254,bring,bring your hat outside.
+255,find,i find a shell on the sand.
+256,lose,do not lose your pencil.
+257,build,we build a sandcastle.
+258,fix,dad helps fix the bike.
+259,make,i make a paper plane.
+260,write,i write my name neatly.
+261,count,we count the stars.
+262,sing,we sing together.
+263,dance,we dance to the music.
+264,play,we play in the park.
+265,learn,i learn new words.
+266,think,i think about my dream.
+267,look,look at the rainbow.
+268,listen,listen to the birds.
+269,watch,watch the clouds move.
+270,feel,i feel happy today.
+271,taste,i taste sweet candy.
+272,smell,i smell fresh flowers.
+273,touch,touch the soft fur.
+274,enjoy,i enjoy the sunny day.
+275,above,the bird flies above the tree.
+276,under,the cat sleeps under the table.
+277,between,the ball is between two boxes.
+278,before,wash your hands before eating.
+279,after,we play after school.
+280,around,the kids run around the park.
+281,along,we walk along the road.
+282,inside,stay inside when it rains.
+283,outside,the children play outside.
+284,across,the dog runs across the field.
+285,again,please read the word again.
+286,because,i smile because i am happy.
+287,every,i drink water every day.
+288,never,we never tell lies.
+289,always,she always helps her friend.
+290,sometimes,i sometimes read at night.
+291,together,we learn together in class.
+292,different,each flower is different.
+293,same,we wear the same shirt color.
+294,behind,the ball is behind the chair.
+295,during,we listen to the teacher during class.
+296,without,i cannot write without a pencil.
+297,careful,be careful when you cross the road.
+298,follow,follow the teacher’s rules.
+299,remember,remember to say thank you.
+300,practice,practice helps you spell better.
