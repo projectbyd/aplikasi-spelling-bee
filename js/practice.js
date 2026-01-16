@@ -1,5 +1,5 @@
 /*************************
- * PRACTICE MODE – FINAL *
+ * PRACTICE MODE – FINAL FIX
  *************************/
 
 /* ========= STATE ========= */
@@ -19,19 +19,19 @@ let audioCtx = null;
 let currentQuestion = null;
 
 /* ========= ELEMENTS ========= */
-const startScreen   = document.getElementById("startScreen");
-const practiceScreen= document.getElementById("practiceScreen");
-const reviewSection = document.getElementById("reviewSection");
+const startScreen    = document.getElementById("startScreen");
+const practiceScreen = document.getElementById("practiceScreen");
+const reviewSection  = document.getElementById("reviewSection");
 
-const studentName   = document.getElementById("studentName");
-const levelSelect   = document.getElementById("level");
-const answerInput   = document.getElementById("answerInput");
+const studentName  = document.getElementById("studentName");
+const levelSelect  = document.getElementById("level");
+const answerInput  = document.getElementById("answerInput");
 
-const questionInfo  = document.getElementById("questionInfo");
-const submitBtn     = document.getElementById("submitBtn");
-const timerEl       = document.getElementById("timer");
-const statusEl      = document.getElementById("status");
-const reviewList    = document.getElementById("reviewList");
+const questionInfo = document.getElementById("questionInfo");
+const submitBtn    = document.getElementById("submitBtn");
+const timerEl      = document.getElementById("timer");
+const statusEl     = document.getElementById("status");
+const reviewList   = document.getElementById("reviewList");
 
 /* ========= AUDIO ========= */
 function unlockAudio(){
@@ -44,61 +44,44 @@ function unlockAudio(){
   speechSynthesis.speak(new SpeechSynthesisUtterance(" "));
 }
 
-function tickSound(){
-  if(!audioCtx) return;
-  const o = audioCtx.createOscillator();
-  const g = audioCtx.createGain();
-  o.frequency.value = 700;
-  g.gain.value = 0.04;
-  o.connect(g);
-  g.connect(audioCtx.destination);
-  o.start();
-  o.stop(audioCtx.currentTime + 0.08);
-}
-
-function endBell(){
-  if(!audioCtx) return;
-  const o = audioCtx.createOscillator();
-  const g = audioCtx.createGain();
-  o.frequency.setValueAtTime(880, audioCtx.currentTime);
-  o.frequency.exponentialRampToValueAtTime(440, audioCtx.currentTime + 1);
-  g.gain.setValueAtTime(0.2, audioCtx.currentTime);
-  g.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 1);
-  o.connect(g);
-  g.connect(audioCtx.destination);
-  o.start();
-  o.stop(audioCtx.currentTime + 1);
-}
-
 /* ========= UTILS ========= */
 function wait(ms){
   return new Promise(r => setTimeout(r, ms));
 }
 
-/* ========= LOAD CSV (AMAN) ========= */
+/* ========= LOAD CSV (ANTI ERROR) ========= */
 async function loadQuestions(){
   const res = await fetch("data/questions.csv");
   const text = await res.text();
 
-  const lines = text
-    .split(/\r?\n/)
-    .map(l => l.trim())
-    .filter(l => l && !l.startsWith("level"));
+  const rows = text
+    .replace(/\r/g, "")
+    .split("\n")
+    .slice(1); // buang header
 
-  questions = lines.map(line => {
-    const parts = line.split(",");
+  questions = [];
 
-    if(parts.length < 3){
-      console.warn("CSV dilewati:", line);
-      return null;
+  for(const row of rows){
+    if(!row.trim()) continue;
+
+    const firstComma = row.indexOf(",");
+    const secondComma = row.indexOf(",", firstComma + 1);
+
+    if(firstComma === -1 || secondComma === -1){
+      console.warn("CSV dilewati:", row);
+      continue;
     }
 
-    return {
-      level: parts[0].trim(),
-      word: parts[1].trim(),
-      sentence: parts.slice(2).join(",").trim()
-    };
-  }).filter(Boolean);
+    const level = row.slice(0, firstComma).trim();
+    const word = row.slice(firstComma + 1, secondComma).trim();
+    const sentence = row.slice(secondComma + 1).trim();
+
+    if(!level || !word || !sentence) continue;
+
+    questions.push({ level, word, sentence });
+  }
+
+  console.log("TOTAL SOAL TERLOAD:", questions.length);
 }
 
 /* ========= START PRACTICE ========= */
@@ -116,9 +99,12 @@ async function startPractice(){
   await loadQuestions();
 
   session = questions
-    .filter(q => q.level === level)
+    .filter(q => String(q.level) === String(level))
     .sort(() => Math.random() - 0.5)
     .slice(0, 25);
+
+  console.log("LEVEL:", level);
+  console.log("SOAL MASUK SESSION:", session.length);
 
   if(session.length === 0){
     alert("Soal untuk level ini belum tersedia");
@@ -139,12 +125,10 @@ async function startPractice(){
 
 /* ========= COUNTDOWN ========= */
 async function readyCountdown(){
-  for(let i=3;i>0;i--){
+  for(let i = 3; i > 0; i--){
     statusEl.textContent = `Mulai dalam ${i}...`;
-    tickSound();
     await wait(1000);
   }
-  endBell();
   statusEl.textContent = "";
 }
 
@@ -157,7 +141,6 @@ function startTimer(){
   timerInterval = setInterval(()=>{
     timeLeft--;
     timerEl.textContent = `⏱️ ${timeLeft}`;
-    if(timeLeft > 0) tickSound();
     if(timeLeft <= 0){
       stopTimer();
       handleTimeout();
@@ -188,6 +171,7 @@ function playQuestion(){
   timerEl.textContent = "⏱️ 20";
 
   currentQuestion = session[currentIndex];
+
   questionInfo.textContent =
     `Soal ${currentIndex + 1} dari ${session.length}`;
 
@@ -230,6 +214,7 @@ function submitAnswer(){
 
   const userAns = answerInput.value.trim().toLowerCase();
   const correct = userAns === currentQuestion.word.toLowerCase();
+
   if(correct) score++;
 
   answers.push({
@@ -245,11 +230,13 @@ function handleTimeout(){
   if(!isAnswering) return;
 
   isAnswering = false;
+
   answers.push({
     word: currentQuestion.word,
     userAnswer: "",
     correct: false
   });
+
   nextQuestion();
 }
 
