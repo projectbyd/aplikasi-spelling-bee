@@ -1,5 +1,6 @@
 /*************************
- * PRACTICE MODE – FINAL FIX
+ * PRACTICE MODE – FINAL *
+ * iPhone SAFE VERSION
  *************************/
 
 /* ========= STATE ========= */
@@ -44,44 +45,38 @@ function unlockAudio(){
   speechSynthesis.speak(new SpeechSynthesisUtterance(" "));
 }
 
+function speak(text){
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = "en-US";
+  u.rate = 1;
+  speechSynthesis.speak(u);
+}
+
 /* ========= UTILS ========= */
 function wait(ms){
   return new Promise(r => setTimeout(r, ms));
 }
 
-/* ========= LOAD CSV (ANTI ERROR) ========= */
+/* ========= LOAD CSV (AMAN KOMMA) ========= */
 async function loadQuestions(){
   const res = await fetch("data/questions.csv");
   const text = await res.text();
 
-  const rows = text
-    .replace(/\r/g, "")
-    .split("\n")
-    .slice(1); // buang header
+  const lines = text
+    .split(/\r?\n/)
+    .map(l => l.trim())
+    .filter(l => l && !l.startsWith("level"));
 
-  questions = [];
+  questions = lines.map(line => {
+    const parts = line.split(",");
+    if(parts.length < 3) return null;
 
-  for(const row of rows){
-    if(!row.trim()) continue;
-
-    const firstComma = row.indexOf(",");
-    const secondComma = row.indexOf(",", firstComma + 1);
-
-    if(firstComma === -1 || secondComma === -1){
-      console.warn("CSV dilewati:", row);
-      continue;
-    }
-
-    const level = row.slice(0, firstComma).trim();
-    const word = row.slice(firstComma + 1, secondComma).trim();
-    const sentence = row.slice(secondComma + 1).trim();
-
-    if(!level || !word || !sentence) continue;
-
-    questions.push({ level, word, sentence });
-  }
-
-  console.log("TOTAL SOAL TERLOAD:", questions.length);
+    return {
+      level: parts[0].trim(),
+      word: parts[1].trim(),
+      sentence: parts.slice(2).join(",").trim()
+    };
+  }).filter(Boolean);
 }
 
 /* ========= START PRACTICE ========= */
@@ -99,12 +94,9 @@ async function startPractice(){
   await loadQuestions();
 
   session = questions
-    .filter(q => String(q.level) === String(level))
+    .filter(q => q.level === level)
     .sort(() => Math.random() - 0.5)
     .slice(0, 25);
-
-  console.log("LEVEL:", level);
-  console.log("SOAL MASUK SESSION:", session.length);
 
   if(session.length === 0){
     alert("Soal untuk level ini belum tersedia");
@@ -127,8 +119,10 @@ async function startPractice(){
 async function readyCountdown(){
   for(let i = 3; i > 0; i--){
     statusEl.textContent = `Mulai dalam ${i}...`;
+    speak(String(i));
     await wait(1000);
   }
+  speak("Start");
   statusEl.textContent = "";
 }
 
@@ -141,6 +135,7 @@ function startTimer(){
   timerInterval = setInterval(()=>{
     timeLeft--;
     timerEl.textContent = `⏱️ ${timeLeft}`;
+
     if(timeLeft <= 0){
       stopTimer();
       handleTimeout();
@@ -171,7 +166,6 @@ function playQuestion(){
   timerEl.textContent = "⏱️ 20";
 
   currentQuestion = session[currentIndex];
-
   questionInfo.textContent =
     `Soal ${currentIndex + 1} dari ${session.length}`;
 
@@ -193,8 +187,10 @@ function playQuestion(){
   u3.onend = () => {
     isReading = false;
     isAnswering = true;
+
     submitBtn.disabled = false;
     submitBtn.style.opacity = 1;
+
     answerInput.focus();
     startTimer();
   };
@@ -214,7 +210,6 @@ function submitAnswer(){
 
   const userAns = answerInput.value.trim().toLowerCase();
   const correct = userAns === currentQuestion.word.toLowerCase();
-
   if(correct) score++;
 
   answers.push({
@@ -229,8 +224,9 @@ function submitAnswer(){
 function handleTimeout(){
   if(!isAnswering) return;
 
-  isAnswering = false;
+  speak("Time's up");
 
+  isAnswering = false;
   answers.push({
     word: currentQuestion.word,
     userAnswer: "",
@@ -307,6 +303,7 @@ function exportPDF(){
 function restartPractice(){
   location.reload();
 }
+
 function goHome(){
   location.href = "index.html";
 }
