@@ -102,6 +102,7 @@ async function startPractice(){
   }
 
   await loadQuestions();
+  console.log("TOTAL QUESTIONS:", questions.length);
 
   session = questions
     .filter(q => q.level === level)
