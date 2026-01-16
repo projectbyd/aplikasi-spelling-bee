@@ -1,41 +1,44 @@
 /*************************
- * PRACTICE MODE - FINAL *
+ * PRACTICE MODE – FINAL *
  *************************/
 
-/* ===== STATE ===== */
-let isReading = false;
-let isAnswering = false;
+/* ========= STATE ========= */
 let questions = [];
 let session = [];
+let answers = [];
 let currentIndex = 0;
 let score = 0;
-let answers = [];
+
+let isReading = false;
+let isAnswering = false;
+
 let timerInterval = null;
 let timeLeft = 20;
+
 let audioCtx = null;
 let currentQuestion = null;
 
-/* ===== ELEMENTS ===== */
+/* ========= ELEMENTS ========= */
 const startScreen   = document.getElementById("startScreen");
-const practiceScreen = document.getElementById("practiceScreen");
-const reviewSection  = document.getElementById("reviewSection");
-const studentName    = document.getElementById("studentName");
-const levelSelect    = document.getElementById("level");
-const answerInput    = document.getElementById("answerInput");
-const questionInfo   = document.getElementById("questionInfo");
-const submitBtn      = document.getElementById("submitBtn");
-const timerEl        = document.getElementById("timer");
-const statusEl       = document.getElementById("status");
-const reviewList     = document.getElementById("reviewList");
+const practiceScreen= document.getElementById("practiceScreen");
+const reviewSection = document.getElementById("reviewSection");
 
-/* ===== AUDIO ===== */
+const studentName   = document.getElementById("studentName");
+const levelSelect   = document.getElementById("level");
+const answerInput   = document.getElementById("answerInput");
+
+const questionInfo  = document.getElementById("questionInfo");
+const submitBtn     = document.getElementById("submitBtn");
+const timerEl       = document.getElementById("timer");
+const statusEl      = document.getElementById("status");
+const reviewList    = document.getElementById("reviewList");
+
+/* ========= AUDIO ========= */
 function unlockAudio(){
   if(!audioCtx){
     audioCtx = new (window.AudioContext || window.webkitAudioContext)();
   }
-  if(audioCtx.state === "suspended"){
-    audioCtx.resume();
-  }
+  if(audioCtx.state === "suspended") audioCtx.resume();
 
   // iOS unlock
   speechSynthesis.speak(new SpeechSynthesisUtterance(" "));
@@ -67,30 +70,39 @@ function endBell(){
   o.stop(audioCtx.currentTime + 1);
 }
 
-/* ===== UTILS ===== */
-const wait = ms => new Promise(r => setTimeout(r, ms));
+/* ========= UTILS ========= */
+function wait(ms){
+  return new Promise(r => setTimeout(r, ms));
+}
 
-/* ===== LOAD CSV (AMAN DENGAN KOMA) ===== */
+/* ========= LOAD CSV (AMAN) ========= */
 async function loadQuestions(){
   const res = await fetch("data/questions.csv");
-  if(!res.ok) throw new Error("CSV not found");
-
   const text = await res.text();
-  const lines = text.trim().split(/\r?\n/).slice(1);
 
-  questions = lines.map(line=>{
+  const lines = text
+    .split(/\r?\n/)
+    .map(l => l.trim())
+    .filter(l => l && !l.startsWith("level"));
+
+  questions = lines.map(line => {
     const parts = line.split(",");
+
+    if(parts.length < 3){
+      console.warn("CSV dilewati:", line);
+      return null;
+    }
+
     return {
       level: parts[0].trim(),
       word: parts[1].trim(),
-      sentence: parts.slice(2).join(",").trim() // 🔥 FIX UTAMA
+      sentence: parts.slice(2).join(",").trim()
     };
-  });
+  }).filter(Boolean);
 }
 
-/* ===== START PRACTICE ===== */
+/* ========= START PRACTICE ========= */
 async function startPractice(){
-  alert("START PRACTICE TERPANGGIL");
   unlockAudio();
 
   const name  = studentName.value.trim();
@@ -102,7 +114,6 @@ async function startPractice(){
   }
 
   await loadQuestions();
-  console.log("TOTAL QUESTIONS:", questions.length);
 
   session = questions
     .filter(q => q.level === level)
@@ -110,7 +121,7 @@ async function startPractice(){
     .slice(0, 25);
 
   if(session.length === 0){
-    alert("Soal belum tersedia untuk level ini");
+    alert("Soal untuk level ini belum tersedia");
     return;
   }
 
@@ -126,7 +137,7 @@ async function startPractice(){
   playQuestion();
 }
 
-/* ===== COUNTDOWN ===== */
+/* ========= COUNTDOWN ========= */
 async function readyCountdown(){
   for(let i=3;i>0;i--){
     statusEl.textContent = `Mulai dalam ${i}...`;
@@ -137,7 +148,7 @@ async function readyCountdown(){
   statusEl.textContent = "";
 }
 
-/* ===== TIMER ===== */
+/* ========= TIMER ========= */
 function startTimer(){
   stopTimer();
   timeLeft = 20;
@@ -161,11 +172,12 @@ function stopTimer(){
   }
 }
 
-/* ===== PLAY QUESTION ===== */
+/* ========= PLAY QUESTION ========= */
 function playQuestion(){
   if(currentIndex >= session.length) return;
 
   speechSynthesis.cancel();
+
   isReading = true;
   isAnswering = false;
 
@@ -173,7 +185,7 @@ function playQuestion(){
   submitBtn.style.opacity = 0.5;
 
   stopTimer();
-  timerEl.textContent = `⏱️ 20`;
+  timerEl.textContent = "⏱️ 20";
 
   currentQuestion = session[currentIndex];
   questionInfo.textContent =
@@ -206,31 +218,18 @@ function playQuestion(){
   speechSynthesis.speak(u1);
 }
 
-/* ===== ANSWER ===== */
-function handleTimeout(){
-  if(!isAnswering) return;
-
-  isAnswering = false;
-  stopTimer();
-
-  answers.push({
-    word: currentQuestion.word,
-    userAnswer: "",
-    correct: false
-  });
-
-  nextQuestion();
-}
-
+/* ========= ANSWER ========= */
 function submitAnswer(){
   if(!isAnswering) return;
 
   isAnswering = false;
   stopTimer();
 
+  submitBtn.disabled = true;
+  submitBtn.style.opacity = 0.5;
+
   const userAns = answerInput.value.trim().toLowerCase();
   const correct = userAns === currentQuestion.word.toLowerCase();
-
   if(correct) score++;
 
   answers.push({
@@ -242,17 +241,30 @@ function submitAnswer(){
   nextQuestion();
 }
 
+function handleTimeout(){
+  if(!isAnswering) return;
+
+  isAnswering = false;
+  answers.push({
+    word: currentQuestion.word,
+    userAnswer: "",
+    correct: false
+  });
+  nextQuestion();
+}
+
 function nextQuestion(){
   currentIndex++;
   if(currentIndex >= session.length){
     finishPractice();
-  }else{
-    setTimeout(playQuestion, 400);
+    return;
   }
+  setTimeout(playQuestion, 400);
 }
 
-/* ===== FINISH ===== */
+/* ========= FINISH ========= */
 function finishPractice(){
+  stopTimer();
   practiceScreen.style.display = "none";
   reviewSection.classList.remove("hidden");
 
@@ -262,22 +274,20 @@ function finishPractice(){
   renderReview();
 }
 
-/* ===== REVIEW ===== */
+/* ========= REVIEW ========= */
 function renderReview(){
   reviewList.innerHTML = "";
   answers.forEach((a,i)=>{
-    const div = document.createElement("div");
-    div.innerHTML = `
+    reviewList.innerHTML += `
       <b>${i+1}. ${a.word}</b><br>
-      Jawaban kamu: ${a.userAnswer || "(kosong)"}<br>
-      Status: ${a.correct ? "✔ Benar" : "✖ Salah"}
+      Jawaban: ${a.userAnswer || "(kosong)"}<br>
+      ${a.correct ? "✔ Benar" : "✖ Salah"}
       <hr>
     `;
-    reviewList.appendChild(div);
   });
 }
 
-/* ===== EXPORT PDF ===== */
+/* ========= PDF ========= */
 function exportPDF(){
   const { jsPDF } = window.jspdf;
   const pdf = new jsPDF();
@@ -288,8 +298,8 @@ function exportPDF(){
   pdf.text(`Nama: ${studentName.value}`, 20, y);
   y += 8;
   pdf.text(`Skor: ${score} / ${session.length}`, 20, y);
-  y += 10;
 
+  y += 10;
   answers.forEach((a,i)=>{
     if(y > 270){
       pdf.addPage();
@@ -297,7 +307,8 @@ function exportPDF(){
     }
     pdf.text(
       `${i+1}. ${a.word} | Jawaban: ${a.userAnswer || "-"}`,
-      20, y
+      20,
+      y
     );
     y += 8;
   });
@@ -305,11 +316,10 @@ function exportPDF(){
   pdf.save("hasil-practice-spelling-bee.pdf");
 }
 
-/* ===== NAV ===== */
+/* ========= NAV ========= */
 function restartPractice(){
   location.reload();
 }
-
 function goHome(){
   location.href = "index.html";
 }
