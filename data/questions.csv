@@ -1,406 +1,1205 @@
 level,word,sentence
-1,Department,She works in the science department at school.
-1,Scourge,Plastic waste has become a scourge to the ocean.
-1,Ocean,The ocean looks calm in the morning.
-1,Sometimes,I sometimes read books before sleeping.
-1,Banana,He eats a banana every morning.
-1,Feather,A white feather floated gently to the ground.
-1,Vulture,A vulture circled high above the desert.
-1,Viable,This plan is viable for the future.
-1,Confidence,She spoke with confidence during the presentation.
-1,Pianist,The pianist played beautifully on stage.
-1,Baker,The baker sells fresh bread every day.
-1,Roast,We roast chicken for Sunday dinner.
-1,Editor,The editor corrected all the mistakes.
-1,Aural,He has strong aural skills in music class.
-1,Manager,The manager praised the team for their hard work.
-1,Building,The building has twenty floors.
-1,Snowfall,Heavy snowfall covered the town overnight.
-1,Peanut,He is allergic to peanut products.
-1,Judge,The judge listened carefully to both sides.
-1,Bought,She bought a new pair of shoes.
-1,Orchestra,The orchestra performed a classical song.
-1,February,February has fewer days than other months.
-1,Socks,I lost one of my socks again.
-1,Umbrella,She carried an umbrella because it was raining.
-1,Astronaut,The astronaut floated inside the spacecraft.
-1,Capable,She is capable of solving difficult problems.
-1,Popsicle,The popsicle melted under the hot sun.
-1,Different,Everyone has different opinions.
-1,Curtains,The curtains blocked the sunlight.
-1,Skinny,The skinny cat slipped through the fence.
-1,Motorbike,He rides his motorbike to work every day.
-1,Champion,The champion lifted the trophy proudly.
-1,Secretary,The secretary answered the phone politely.
-1,Anticipate,I anticipate a great holiday this year.
-1,Handshake,They greeted each other with a firm handshake.
-1,Gymnast,The gymnast practiced every afternoon.
-1,Elbow,He hurt his elbow while playing basketball.
-1,Resonate,Her words resonate with many people.
-1,Passive,He remained passive during the discussion.
-1,Theatre,We watched a play at the theatre.
-1,Holiday,We went to Bali for the holiday.
-1,Rubber,Rubber bands are very flexible.
-1,Emerald,The emerald ring sparkled brightly.
-1,Concern,I have concern for your safety.
-1,Fraction,She learned how to solve a fraction.
-1,Snorkeling,We went snorkeling near the coral reef.
-1,Scorpion,A scorpion hid under the rock.
-1,Cash,He paid for the food with cash.
-1,Sister,My sister helps me with homework.
-1,Mastodon,The mastodon is an extinct animal.
-1,Keyboard,She typed quickly on the keyboard.
-1,Remember,Remember to turn off the lights.
-1,Ribbon,The gift was wrapped with a red ribbon.
-1,Sandwich,He packed a sandwich for lunch.
-1,Mistake,Everyone makes a mistake sometimes.
-1,Atonal,The music sounded atonal and unusual.
-1,Wristwatch,His wristwatch stopped working.
-1,Glamorous,She wore a glamorous dress to the party.
-1,Seaport,The seaport was busy with ships.
-1,Spider,A spider built a web in the corner.
-1,Future,She dreams about the future.
-1,Curious,The curious child asked many questions.
-1,Ulcer,The doctor treated the stomach ulcer.
-1,Dessert,We shared dessert after dinner.
-1,Mansion,The mansion looked grand and old.
-1,Planet,Earth is a planet in the solar system.
-1,Infant,The infant slept peacefully.
-1,Denominator,Find the denominator in the fraction.
-1,Fireworks,Fireworks lit up the night sky.
-1,Milestone,Graduating from school is a milestone.
-1,Green,The leaves are bright green.
-1,Kayak,They paddled the kayak across the lake.
-1,Pineapple,She cut a fresh pineapple.
-1,Descendent,He is a descendent of a royal family.
-1,Length,Measure the length of the table.
-1,Centurion,The centurion led the soldiers bravely.
-1,Zebra,A zebra crossed the road slowly.
-1,Lawyer,The lawyer gave helpful advice.
-1,Great,You did a great job on the test.
-1,Verbal,She has strong verbal communication skills.
-1,Stoat,The stoat has brown fur in summer.
-1,Recipe,Follow the recipe carefully.
-1,City,The city is busy at night.
-1,Blouse,She bought a new blouse.
-1,Landscape,The landscape looked beautiful at sunset.
-1,Meant,I meant to call you earlier.
-1,Satellite,The satellite orbits the Earth.
-1,Thailand,Thailand is famous for its beaches.
-1,Helicopter,The helicopter landed safely.
-1,Tornado,The tornado damaged several houses.
-1,Cabbage,She chopped cabbage for soup.
-1,Minus,Five minus two equals three.
-1,Opinion,Everyone has an opinion.
-1,Candidate,The candidate gave a strong speech.
-1,Grandmother,My grandmother tells wonderful stories.
-1,Python,The python slithered through the grass.
-1,Sandpit,Children played in the sandpit.
-1,Mixture,Mix the ingredients into a smooth mixture.
-1,Receptionist,The receptionist welcomed the guests.
-1,Swell,The waves began to swell as the storm approached.
-1,Stool,He sat on a wooden stool.
-1,Tongue,Stick out your tongue and say ah.
-1,College,She plans to study abroad after college.
-1,Museum,The museum displays ancient artifacts.
-1,Seaweed,Seaweed washed up on the shore.
-1,Barefoot,The children walked barefoot on the sand.
-1,Earthquake,The earthquake shook the entire city.
-1,Shellfish,Some people are allergic to shellfish.
-1,Button,Press the button to start the machine.
-1,Nationality,What is your nationality?
-1,Grave,The old grave was covered with moss.
-1,Delightful,We had a delightful afternoon together.
-1,Coat,She wore a thick coat in winter.
-1,Suburbs,They live in the quiet suburbs.
-1,Cousin,My cousin visits us every holiday.
-1,Diplomatic,The leaders held diplomatic talks.
-1,Operation,The operation was successful.
-1,Comfortable,This chair is very comfortable.
-1,Spicy,I like spicy food.
-1,Nephew,My nephew is learning to read.
-1,Camera,She took photos with her camera.
-1,Official,The announcement is now official.
-1,Employee,The employee arrived early.
-1,Fancy,She wore a fancy dress to the party.
-1,Strawberry,He picked fresh strawberry from the farm.
-1,Volcanic,The island has volcanic mountains.
-1,Fountain,Water sprayed from the fountain.
-1,Partial,He gave a partial answer.
-1,Medium,I ordered a medium-sized drink.
-1,Crowded,The bus was crowded this morning.
-1,Sleepy,I feel sleepy after lunch.
-1,Village,The village is peaceful and quiet.
-1,Homework,She finished her homework early.
-1,Penguin,The penguin waddled across the ice.
-1,Saddle,The saddle was placed on the horse.
-1,Amateur,He is an amateur photographer.
-1,Magazine,She reads a magazine every week.
-1,Thirsty,I feel thirsty after running.
-1,Already,I have already finished my work.
-1,Understand,I understand the lesson now.
-1,Ugliest,That was the ugliest hat Ive ever seen.
-1,Concept,The concept is easy to understand.
-1,Freezer,Put the ice cream in the freezer.
-1,Toaster,The toaster burned the bread.
-1,Shoulder,He carried the bag on his shoulder.
-1,Vicissitudes,She learned to face the vicissitudes of life.
-1,Explain,Please explain the problem again.
-1,Ostrich,An ostrich can run very fast.
-1,Dinner,We had dinner together at home.
-1,Impossible,It is impossible to finish this alone.
-1,Ceramics,The gallery sells handmade ceramics.
-1,Pollution,Air pollution affects our health.
-1,Electrical,The electrical system needs repair.
-1,Weather,The weather changed suddenly.
-1,Muesli,He eats muesli with milk for breakfast.
-1,Wheelchair,She uses a wheelchair at school.
-1,Flop,The show was a complete flop.
-1,Patient,The nurse is very patient.
-1,Upright,Sit upright during the lesson.
-1,Narrator,The narrator speaks clearly.
-1,Torch,He turned on the torch in the dark.
-1,Blanket,She covered herself with a blanket.
-1,Human,Humans need oxygen to live.
-1,Inquire,Please inquire at the front desk.
-1,Monarch,The monarch addressed the nation.
-1,December,December is the coldest month here.
-1,Surgery,The patient recovered after surgery.
-1,Wrist,She wore a bracelet on her wrist.
-1,Deliver,The company will deliver the package.
-1,Interview,He passed the job interview.
-1,Promise,She made a promise to her parents.
-1,Butcher,The butcher cuts the meat carefully.
-1,Insect,An insect landed on the flower.
-1,Lemon,She added lemon to the tea.
-1,Grocery,He went to the grocery store.
-1,Farmer,The farmer grows rice.
-1,Turkey,Turkey is often served on holidays.
-1,Dentist,The dentist cleaned my teeth.
-1,Market,The market opens early.
-1,Volleyball,They play volleyball every weekend.
-1,Heater,Turn on the heater when its cold.
-1,League,The team joined a new league.
-1,Famous,She became famous after the show.
-1,Pencil,Sharpen your pencil before writing.
-1,Repeat,Please repeat the instructions.
-1,Cheesecake,The cheesecake tastes delicious.
-1,Quicksand,The character sank into quicksand.
-1,Prevent,Exercise helps prevent disease.
-1,Purple,She chose a purple bag.
-1,Eraser,Use an eraser to fix errors.
-1,Bonus,He received a bonus at work.
-1,Between,The shop is between two banks.
-1,Pumpkins,Pumpkins grow well in autumn.
-1,Award,She won an award for singing.
-1,Jungle,The jungle is full of wildlife.
-1,Thunderstorm,A thunderstorm hit last night.
-1,Faraway,They moved to a faraway city.
-1,Knives,Keep knives in a safe place.
-1,Microphone,He tested the microphone.
-1,Swell,The waves began to swell as the storm approached.
-1,Stool,He sat on a wooden stool.
-1,Tongue,Stick out your tongue and say ah.
-1,College,She plans to study abroad after college.
-1,Museum,The museum displays ancient artifacts.
-1,Seaweed,Seaweed washed up on the shore.
-1,Barefoot,The children walked barefoot on the sand.
-1,Earthquake,The earthquake shook the entire city.
-1,Shellfish,Some people are allergic to shellfish.
-1,Button,Press the button to start the machine.
-1,Nationality,What is your nationality?
-1,Grave,The old grave was covered with moss.
-1,Delightful,We had a delightful afternoon together.
-1,Coat,She wore a thick coat in winter.
-1,Suburbs,They live in the quiet suburbs.
-1,Cousin,My cousin visits us every holiday.
-1,Diplomatic,The leaders held diplomatic talks.
-1,Operation,The operation was successful.
-1,Comfortable,This chair is very comfortable.
-1,Spicy,I like spicy food.
-1,Nephew,My nephew is learning to read.
-1,Camera,She took photos with her camera.
-1,Official,The announcement is now official.
-1,Employee,The employee arrived early.
-1,Fancy,She wore a fancy dress to the party.
-1,Strawberry,He picked fresh strawberry from the farm.
-1,Volcanic,The island has volcanic mountains.
-1,Fountain,Water sprayed from the fountain.
-1,Partial,He gave a partial answer.
-1,Medium,I ordered a medium-sized drink.
-1,Crowded,The bus was crowded this morning.
-1,Sleepy,I feel sleepy after lunch.
-1,Village,The village is peaceful and quiet.
-1,Homework,She finished her homework early.
-1,Penguin,The penguin waddled across the ice.
-1,Saddle,The saddle was placed on the horse.
-1,Amateur,He is an amateur photographer.
-1,Magazine,She reads a magazine every week.
-1,Thirsty,I feel thirsty after running.
-1,Already,I have already finished my work.
-1,Understand,I understand the lesson now.
-1,Ugliest,That was the ugliest hat Ive ever seen.
-1,Concept,The concept is easy to understand.
-1,Freezer,Put the ice cream in the freezer.
-1,Toaster,The toaster burned the bread.
-1,Shoulder,He carried the bag on his shoulder.
-1,Vicissitudes,She learned to face the vicissitudes of life.
-1,Explain,Please explain the problem again.
-1,Ostrich,An ostrich can run very fast.
-1,Dinner,We had dinner together at home.
-1,Impossible,It is impossible to finish this alone.
-1,Ceramics,The gallery sells handmade ceramics.
-1,Pollution,Air pollution affects our health.
-1,Electrical,The electrical system needs repair.
-1,Weather,The weather changed suddenly.
-1,Muesli,He eats muesli with milk for breakfast.
-1,Wheelchair,She uses a wheelchair at school.
-1,Flop,The show was a complete flop.
-1,Patient,The nurse is very patient.
-1,Upright,Sit upright during the lesson.
-1,Narrator,The narrator speaks clearly.
-1,Torch,He turned on the torch in the dark.
-1,Blanket,She covered herself with a blanket.
-1,Human,Humans need oxygen to live.
-1,Inquire,Please inquire at the front desk.
-1,Monarch,The monarch addressed the nation.
-1,December,December is the coldest month here.
-1,Surgery,The patient recovered after surgery.
-1,Wrist,She wore a bracelet on her wrist.
-1,Deliver,The company will deliver the package.
-1,Interview,He passed the job interview.
-1,Promise,She made a promise to her parents.
-1,Butcher,The butcher cuts the meat carefully.
-1,Insect,An insect landed on the flower.
-1,Lemon,She added lemon to the tea.
-1,Grocery,He went to the grocery store.
-1,Farmer,The farmer grows rice.
-1,Turkey,Turkey is often served on holidays.
-1,Dentist,The dentist cleaned my teeth.
-1,Market,The market opens early.
-1,Volleyball,They play volleyball every weekend.
-1,Heater,Turn on the heater when its cold.
-1,League,The team joined a new league.
-1,Famous,She became famous after the show.
-1,Pencil,Sharpen your pencil before writing.
-1,Repeat,Please repeat the instructions.
-1,Cheesecake,The cheesecake tastes delicious.
-1,Quicksand,The character sank into quicksand.
-1,Prevent,Exercise helps prevent disease.
-1,Purple,She chose a purple bag.
-1,Eraser,Use an eraser to fix errors.
-1,Bonus,He received a bonus at work.
-1,Between,The shop is between two banks.
-1,Pumpkins,Pumpkins grow well in autumn.
-1,Award,She won an award for singing.
-1,Jungle,The jungle is full of wildlife.
-1,Thunderstorm,A thunderstorm hit last night.
-1,Faraway,They moved to a faraway city.
-1,Knives,Keep knives in a safe place.
-1,Microphone,He tested the microphone.
-1,Teenager,The teenager enjoys listening to music.
-1,Cushion,The cushion makes the chair comfortable.
-1,Double,Please double the recipe.
-1,Garlic,Garlic adds strong flavor to food.
-1,Eighteen,She turned eighteen last year.
-1,Painting,The painting hangs on the wall.
-1,Cupboard,The plates are kept in the cupboard.
-1,Observe,Observe the experiment carefully.
-1,Battery,The toy needs a new battery.
-1,Energetic,The puppy is very energetic.
-1,Rescue,The team worked hard to rescue the hikers.
-1,Vacation,We went on vacation during summer.
-1,Congratulation,She sent a congratulation message.
-1,Scissors,Use scissors to cut the paper.
-1,Lazy,He felt lazy on Sunday morning.
-1,Mineral,Water contains important minerals.
-1,Cosmetic,She bought cosmetic products.
-1,Straight,Draw a straight line.
-1,Soldier,The soldier guarded the gate.
-1,Vegetable,Eating vegetables is good for health.
-1,Village,The village is surrounded by fields.
-1,Triangle,A triangle has three sides.
-1,Initial,Write your initial here.
-1,Palace,The palace looks magnificent.
-1,Sadness,Her face showed sadness.
-1,Journey,The journey was long but fun.
-1,Aquarium,We saw sharks at the aquarium.
-1,Grammar,Grammar is important in writing.
-1,Smooth,The road surface is smooth.
-1,Jaguar,A jaguar is a powerful animal.
-1,Damage,The storm caused serious damage.
-1,Gasoline,The car needs gasoline.
-1,Baseball,He plays baseball after school.
-1,Hedgehog,The hedgehog curled into a ball.
-1,Poodle,The poodle has curly fur.
-1,Flight,The flight was delayed.
-1,Physics,Physics explains natural laws.
-1,Donate,She decided to donate clothes.
-1,Ostrich,An ostrich has long legs.
-1,Gloves,Wear gloves to protect your hands.
-1,October,October comes after September.
-1,Couch,He fell asleep on the couch.
-1,Prickly,The cactus feels prickly.
-1,Giggle,The children giggle during class.
-1,Gravy,She poured gravy over the meat.
-1,Jealous,He felt jealous of his friend.
-1,Robotic,The movements looked robotic.
-1,Raincoat,Wear a raincoat in heavy rain.
-1,Pedestrian,The pedestrian crossed the street.
-1,Skateboard,He rides his skateboard at the park.
-1,Knife,Be careful with the knife.
-1,Cloudy,It stayed cloudy all day.
-1,Kidney,The doctor checked her kidney.
-1,Blueberry,She added blueberry to the yogurt.
-1,Accurate,His answer was accurate.
-1,Grandson,The grandson hugged his grandfather.
-1,Naughty,The naughty boy laughed loudly.
-1,Seesaw,The children played on the seesaw.
-1,Ozone,The ozone layer protects Earth.
-1,Breakfast,Breakfast is the most important meal.
-1,Dinosaur,Dinosaurs lived millions of years ago.
-1,Teacup,She drank tea from a teacup.
-1,Freshen,Open the window to freshen the air.
-1,Escape,The bird tried to escape the cage.
-1,Mosquito,A mosquito bit my arm.
-1,Restaurant,We ate dinner at a restaurant.
-1,Fishbowl,The goldfish swam in the fishbowl.
-1,Bronze,The statue is made of bronze.
-1,Deafen,The loud noise could deafen people.
-1,Dumpling,She cooked dumplings for lunch.
-1,Glossy,The magazine cover looks glossy.
-1,Crumb,A crumb fell on the table.
-1,Stomach,My stomach feels uncomfortable.
-1,Bookshelf,The bookshelf is full of books.
-1,Prompt,Please give a prompt reply.
-1,Film,We watched a film together.
-1,White,The walls are painted white.
-1,Under,The cat hid under the table.
-1,Comb,He used a comb for his hair.
-1,Outside,The kids played outside.
-1,Overdose,An overdose can be dangerous.
-1,Bounce,The ball began to bounce.
-1,Prison,The old prison is now a museum.
-1,Kneel,Please kneel down carefully.
-1,Equal,All students are equal.
-1,Sneakers,She wore white sneakers.
-1,Sneeze,He started to sneeze.
-1,Wallet,He forgot his wallet at home.
-1,Rhyme,The poem has a nice rhyme.
-1,Antarctic,Penguins live in the Antarctic region.
-1,Commercial,The commercial aired on television.
-1,Octopus,An octopus has eight arms.
-1,Scissors,Keep scissors away from children.
-1,Wonderful,We had a wonderful time.
-1,Quartz,Quartz is a hard mineral.
-1,Wrong,Your answer is wrong.
-1,Charger,I forgot to bring my charger.
-1,Magnet,A magnet attracts metal.
-1,Lawyer,The lawyer explained the law.
-1,Fairness,Fairness is important in games.
-1,Boots,She wore boots in the rain.
-1,Skyscraper,The skyscraper is very tall.
-1,Octagon,An octagon has eight sides.
+1,cat,the cat is sleeping.
+1,dog,my dog is very friendly.
+1,sun,the sun is bright today.
+1,moon,the moon shines at night.
+1,star,i see a star in the sky.
+1,ball,i kick the ball.
+1,book,she reads a book.
+1,pen,this is my pen
+1,cup,i drink from the cup.
+1,bed,i sleep on my bed.
+1,car,the car is fast.
+1,bus,i ride the bus to school.
+1,fish,the fish swims in water.
+1,bird,a bird is singing.
+1,tree,the tree is tall.
+1,flower,the flower is beautiful.
+1,milk,i drink milk every day.
+1,cake,the cake is sweet.
+1,egg,i eat an egg for breakfast.
+1,apple,the apple is red.
+1,banana,i like banana.
+1,rice,we eat rice for lunch.
+1,bread,she eats bread.
+1,water,please drink water.
+1,baby,the baby is smiling.
+1,boy,the boy runs fast.
+1,girl,the girl is happy.
+1,mom,my mom cooks food.
+1,dad,my dad works hard.
+1,hand,wash your hand.
+1,foot,my foot hurts.
+1,eye,close your eye.
+1,nose,my nose is cold.
+1,ear,my ear can hear music.
+1,mouth,open your mouth.
+1,red,the apple is red.
+1,blue,the sky is blue.
+1,green,the leaf is green.
+1,yellow,the sun is yellow.
+1,big,the house is big.
+1,small,the ant is small.
+1,hot,the soup is hot.
+1,cold,the ice is cold.
+1,happy,i feel happy today.
+1,sad,she feels sad.
+1,walk,we walk to school.
+1,sit,please sit down.
+1,stand,stand in line.
+1,read,i read a book.
+1,draw,i draw a picture.
+1,eat,i eat lunch.
+1,sleep,i sleep at night.
+1,cry,the baby can cry.
+1,cloud,the cloud is white.
+1,wind,the wind is strong.
+1,day,today is a sunny day.
+1,night,i sleep at night.
+1,school,i go to school.
+1,class,our class is fun.
+1,teacher,the teacher is kind.
+1,friend,my friend helps me.
+1,oven,my oven is new.
+1,sock,i wear a sock.
+1,door,close the door.
+1,window,open the window.
+1,house,this is my house.
+1,road,the road is long.
+1,park,we play in the park.
+1,toy,this toy is fun.
+1,doll,she has a doll.
+1,bike,i ride a bike.
+1,train,the train is fast.
+1,boat,the boat is on water.
+1,beach,i play at the beach.
+1,lion,the lion roared loudly at the zoo.
+1,tiger,the tiger walked quietly in the jungle.
+1,bear,the bear looked for honey.
+1,horse,the horse ran across the field.
+1,cow,the cow eats grass every day.
+1,sheep,the sheep has soft white wool.
+1,goat,the goat climbed the small hill.
+1,duck,the duck swam in the pond.
+1,frog,the frog jumped into the water.
+1,snake,the snake slid across the ground.
+1,monkey,the monkey grabbed a banana.
+1,panda,the panda ate bamboo slowly.
+1,rabbit,the rabbit hid behind the bush.
+1,mouse,the mouse ran into a tiny hole.
+1,turtle,the turtle moved very slowly.
+1,pizza,we shared a big pizza at dinner.
+1,cookie,the cookie smelled sweet and warm.
+1,candy,she saved her candy for later.
+1,ice,the ice melted in the sun.
+1,soup,the soup warmed my hands.
+1,spoon,he stirred the soup with a spoon.
+1,plate,the plate was full of food.
+1,lunch,lunch time is my favorite time.
+1,dinner,we eat dinner together every night.
+1,snack,i packed a snack for school.
+1,rain,the rain danced on the roof.
+1,snow,the snow covered the yard.
+1,storm,the storm made loud sounds.
+1,sky,the sky turned pink at sunset.
+1,fire,the fire kept us warm.
+1,hill,we rolled down the hill laughing.
+1,river,the river flowed quietly.
+1,lake,the lake looked calm and blue.
+1,sea,the sea touched my feet.
+1,sand,the sand slipped through my fingers.
+1,shell,i found a shell on the beach.
+1,kite,my kite flew high in the sky.
+1,swing,i swung higher and higher.
+1,slide,the slide was fast and fun.
+1,game,we played a fun game together.
+1,hide,letâ€™s hide behind the tree.
+1,seek,we played hide and seek.
+1,run,i ran as fast as i could.
+1,jump,i jumped over the puddle.
+1,climb,we climbed the big rock.
+1,laugh,we laughed until our bellies hurt.
+1,magic,the magic trick surprised everyone.
+1,hero,the hero saved the day.
+1,king,the king wore a golden crown.
+1,queen,the queen waved to the people.
+1,crown,the crown sparkled in the light.
+1,castle,the castle stood on the hill.
+1,dragon,the dragon breathed fire in the story.
+1,fairy,the fairy sprinkled magic dust.
+1,wizard,the wizard waved his wand.
+1,story,the story took us to another world.
+1,page,i turned the page slowly.
+1,pencil,my pencil rolled off the desk.
+1,paper,i folded the paper into a boat.
+1,color,i chose my favorite color.
+1,paint,we painted a rainbow.
+1,music,the music made me dance.
+1,drum,he beat the drum loudly.
+1,song,we sang a happy song.
+1,quiet,the room became quiet.
+1,fast,the car moved fast.
+1,slow,the snail is slow.
+1,clean,i cleaned my room.
+1,messy,my desk looked messy.
+1,bright,the stars were bright tonight.
+1,dark,the room was dark and quiet.
+1,warm,the sun felt warm.
+1,cool,the breeze felt cool.
+1,sweet,the cake tasted sweet.
+1,fun,the trip was fun.
+1,thank,i said thank you with a smile.
+1,love,i love my family.
+1,puppy,the puppy chased its own tail.
+1,kitten,the kitten slept in a warm box.
+1,chick,the yellow chick followed its mother.
+1,calf,the calf stayed close to the cow.
+1,pony,the pony carried the child gently.
+1,owl,the owl hooted at night.
+1,crow,the crow sat on the tall tree.
+1,swan,the swan glided across the lake.
+1,bee,a bee buzzed around the flower.
+1,ant,the ant carried a big crumb.
+1,leaf,a leaf fell slowly to the ground.
+1,seed,i planted a seed in the soil.
+1,grass,the grass felt cool under my feet.
+1,root,the root grows under the ground.
+1,branch,a bird sat on the branch.
+1,fruit,the fruit tasted fresh and sweet.
+1,juice,i drank cold juice after playing.
+1,honey,the honey dripped slowly.
+1,butter,the butter melted on warm bread.
+1,cheese,the cheese smelled delicious.
+1,bowl,the bowl was full of soup.
+1,knife,the knife cut the apple.
+1,fork,i picked up food with a fork.
+1,table,the table was set for dinner.
+1,chair,i pulled the chair closer.
+1,clock,the clock ticked all night.
+1,bell,the bell rang loudly.
+1,whistle,the whistle made a sharp sound.
+1,flag,the flag waved in the wind.
+1,map,the map showed the long road.
+1,path,we followed the forest path.
+1,bridge,the bridge crossed the river.
+1,tunnel,the train entered the tunnel.
+1,fence,the fence kept the animals safe.
+1,field,the field was wide and green.
+1,farm,we visited a farm today.
+1,barn,the barn smelled like hay.
+1,wagon,the wagon rolled slowly.
+1,wheel,the wheel turned fast.
+1,rope,he climbed using a rope.
+1,box,i hid the toy in a box.
+1,bag,my bag felt heavy.
+1,gift,she opened her gift happily.
+1,card,i made a card for my mom.
+1,letter,i wrote a letter to my friend.
+1,stamp,i stuck a stamp on the letter.
+1,mail,the mail came in the afternoon.
+1,phone,the phone rang loudly.
+1,radio,the radio played music.
+1,photo,i looked at an old photo.
+1,camera,the camera flashed brightly.
+1,screen,the screen showed a cartoon.
+1,light,the light flickered softly.
+1,shadow,my shadow followed me.
+1,mirror,i saw my face in the mirror.
+1,towel,i dried my hands with a towel.
+1,soap,the soap smelled nice.
+1,brush,i brushed my hair slowly.
+1,comb,the comb slipped from my hand.
+1,shirt,i wore my blue shirt.
+1,pants,my pants got muddy.
+1,socks,my socks were warm.
+1,shoes,my shoes were wet.
+1,jacket,i put on my jacket.
+1,hat,the hat flew away.
+1,gloves,i wore gloves in winter.
+1,scarf,the scarf kept my neck warm.
+1,raincoat,my raincoat kept me dry.
+1,umbrella,the umbrella opened quickly.
+1,puddle,i jumped in a puddle.
+1,splash,water made a splash.
+1,muddy,my shoes were muddy.
+1,windy,the day was windy.
+1,fog,the fog covered the road.
+1,sunny,it was a sunny day.
+1,chilly,the morning felt chilly.
+1,early,i woke up early.
+1,late,we arrived late.
+1,ready,i am ready to go.
+1,tired,i felt tired after playing.
+1,excited,i was excited for the trip.
+1,brave,the brave child tried again.
+1,kind,she was kind to everyone.
+1,fair,the teacher was fair.
+1,honest,he was honest about the mistake.
+1,silly,we made silly faces.
+1,proud,i felt proud of my work.
+1,smile,her smile made everyone happy.
+1,hug,i gave my mom a warm hug.
+1,wave,we wave to our friends.
+1,shout,the kids shout with joy.
+1,whisper,he whispered a secret.
+1,cheer,the crowd began to cheer.
+1,clap,we clap after the show.
+1,rest,i rest under the tree.
+1,dream,i dream about flying high.
+1,wish,i made a wish on a star.
+1,hope,i hope today is fun.
+1,help,i help my friend carry books.
+1,share,we share our snacks.
+1,give,i give my toy to my brother.
+1,take,please take your bag.
+1,bring,bring your hat outside.
+1,find,i find a shell on the sand.
+1,lose,do not lose your pencil.
+1,build,we build a sandcastle.
+1,fix,dad helps fix the bike.
+1,make,i make a paper plane.
+1,write,i write my name neatly.
+1,count,we count the stars.
+1,sing,we sing together.
+1,dance,we dance to the music.
+1,play,we play in the park.
+1,learn,i learn new words.
+1,think,i think about my dream.
+1,look,look at the rainbow.
+1,listen,listen to the birds.
+1,watch,watch the clouds move.
+1,feel,i feel happy today.
+1,taste,i taste sweet candy.
+1,smell,i smell fresh flowers.
+1,touch,touch the soft fur.
+1,enjoy,i enjoy the sunny day.
+1,above,the bird flies above the tree.
+1,under,the cat sleeps under the table.
+1,between,the ball is between two boxes.
+1,before,wash your hands before eating.
+1,after,we play after school.
+1,around,the kids run around the park.
+1,along,we walk along the road.
+1,inside,stay inside when it rains.
+1,outside,the children play outside.
+1,across,the dog runs across the field.
+1,again,please read the word again.
+1,because,i smile because i am happy.
+1,every,i drink water every day.
+1,never,we never tell lies.
+1,always,she always helps her friend.
+1,sometimes,i sometimes read at night.
+1,together,we learn together in class.
+1,different,each flower is different.
+1,same,we wear the same shirt color.
+1,behind,the ball is behind the chair.
+1,during,we listen to the teacher during class.
+1,without,i cannot write without a pencil.
+1,careful,be careful when you cross the road.
+1,follow,follow the teacher’s rules.
+1,remember,remember to say thank you.
+1,practice,practice helps you spell better.
+2,parent,my parent always supports my education.
+2,department,she works in the science department at school.
+2,scourge,plastic waste has become a scourge to the ocean.
+2,ocean,the ocean looks calm in the morning.
+2,sometimes,i sometimes read books before sleeping.
+2,banana,he eats a banana every morning.
+2,feather,a white feather floated gently to the ground.
+2,vulture,a vulture circled high above the desert.
+2,viable,this plan is viable for the future.
+2,confidence,she spoke with confidence during the presentation.
+2,pianist,the pianist played beautifully on stage.
+2,baker,the baker sells fresh bread every day.
+2,roast,we roast chicken for sunday dinner.
+2,editor,the editor corrected all the mistakes.
+2,aural,he has strong aural skills in music class.
+2,manager,the manager praised the team for their hard work.
+2,building,the building has twenty floors.
+2,snowfall,heavy snowfall covered the town overnight.
+2,peanut,he is allergic to peanut products.
+2,judge,the judge listened carefully to both sides.
+2,bought,she bought a new pair of shoes.
+2,orchestra,the orchestra performed a classical song.
+2,february,february has fewer days than other months.
+2,socks,i lost one of my socks again.
+2,umbrella,she carried an umbrella because it was raining.
+2,astronaut,the astronaut floated inside the spacecraft.
+2,capable,she is capable of solving difficult problems.
+2,popsicle,the popsicle melted under the hot sun.
+2,different,everyone has different opinions.
+2,curtains,the curtains blocked the sunlight.
+2,skinny,the skinny cat slipped through the fence.
+2,motorbike,he rides his motorbike to work every day.
+2,champion,the champion lifted the trophy proudly.
+2,secretary,the secretary answered the phone politely.
+2,anticipate,i anticipate a great holiday this year.
+2,handshake,they greeted each other with a firm handshake.
+2,gymnast,the gymnast practiced every afternoon.
+2,elbow,he hurt his elbow while playing basketball.
+2,resonate,her words resonate with many people.
+2,passive,he remained passive during the discussion.
+2,theatre,we watched a play at the theatre.
+2,holiday,we went to bali for the holiday.
+2,rubber,rubber bands are very flexible.
+2,emerald,the emerald ring sparkled brightly.
+2,concern,i have concern for your safety.
+2,fraction,she learned how to solve a fraction.
+2,snorkeling,we went snorkeling near the coral reef.
+2,scorpion,a scorpion hid under the rock.
+2,cash,he paid for the food with cash.
+2,sister,my sister helps me with homework.
+2,mastodon,the mastodon is an extinct animal.
+2,keyboard,she typed quickly on the keyboard.
+2,remember,remember to turn off the lights.
+2,ribbon,the gift was wrapped with a red ribbon.
+2,sandwich,he packed a sandwich for lunch.
+2,mistake,everyone makes a mistake sometimes.
+2,atonal,the music sounded atonal and unusual.
+2,wristwatch,his wristwatch stopped working.
+2,glamorous,she wore a glamorous dress to the party.
+2,seaport,the seaport was busy with ships.
+2,spider,a spider built a web in the corner.
+2,future,she dreams about the future.
+2,curious,the curious child asked many questions.
+2,ulcer,the doctor treated the stomach ulcer.
+2,dessert,we shared dessert after dinner.
+2,mansion,the mansion looked grand and old.
+2,planet,earth is a planet in the solar system.
+2,infant,the infant slept peacefully.
+2,denominator,find the denominator in the fraction.
+2,fireworks,fireworks lit up the night sky.
+2,milestone,graduating from school is a milestone.
+2,green,the leaves are bright green.
+2,kayak,they paddled the kayak across the lake.
+2,pineapple,she cut a fresh pineapple.
+2,descendent,he is a descendent of a royal family.
+2,length,measure the length of the table.
+2,centurion,the centurion led the soldiers bravely.
+2,zebra,a zebra crossed the road slowly.
+2,lawyer,the lawyer gave helpful advice.
+2,great,you did a great job on the test.
+2,verbal,she has strong verbal communication skills.
+2,stoat,the stoat has brown fur in summer.
+2,recipe,follow the recipe carefully.
+2,city,the city is busy at night.
+2,blouse,she bought a new blouse.
+2,landscape,the landscape looked beautiful at sunset.
+2,meant,i meant to call you earlier.
+2,satellite,the satellite orbits the earth.
+2,thailand,thailand is famous for its beaches.
+2,helicopter,the helicopter landed safely.
+2,tornado,the tornado damaged several houses.
+2,cabbage,she chopped cabbage for soup.
+2,minus,five minus two equals three.
+2,opinion,everyone has an opinion.
+2,candidate,the candidate gave a strong speech.
+2,grandmother,my grandmother tells wonderful stories.
+2,python,the python slithered through the grass.
+2,sandpit,children played in the sandpit.
+2,mixture,mix the ingredients into a smooth mixture.
+2,receptionist,the receptionist welcomed the guests.
+2,swell,the waves began to swell as the storm approached.
+2,stool,he sat on a wooden stool.
+2,tongue,the doctor checked his tongue
+2,college,she plans to study abroad after college.
+2,museum,the museum displays ancient artifacts.
+2,seaweed,seaweed washed up on the shore.
+2,barefoot,the children walked barefoot on the sand.
+2,earthquake,the earthquake shook the entire city.
+2,shellfish,some people are allergic to shellfish.
+2,button,press the button to start the machine.
+2,nationality,what is your nationality?
+2,grave,the old grave was covered with moss.
+2,delightful,we had a delightful afternoon together.
+2,coat,she wore a thick coat in winter.
+2,suburbs,they live in the quiet suburbs.
+2,cousin,my cousin visits us every holiday.
+2,diplomatic,the leaders held diplomatic talks.
+2,operation,the operation was successful.
+2,comfortable,this chair is very comfortable.
+2,spicy,i like spicy food.
+2,nephew,my nephew is learning to read.
+2,camera,she took photos with her camera.
+2,official,the announcement is now official.
+2,employee,the employee arrived early.
+2,fancy,she wore a fancy dress to the party.
+2,strawberry,he picked fresh strawberry from the farm.
+2,volcanic,the island has volcanic mountains.
+2,fountain,water sprayed from the fountain.
+2,partial,he gave a partial answer.
+2,medium,i ordered a medium-sized drink.
+2,crowded,the bus was crowded this morning.
+2,sleepy,i feel sleepy after lunch.
+2,village,the village is peaceful and quiet.
+2,homework,she finished her homework early.
+2,penguin,the penguin waddled across the ice.
+2,saddle,the saddle was placed on the horse.
+2,amateur,he is an amateur photographer.
+2,magazine,she reads a magazine every week.
+2,thirsty,i feel thirsty after running.
+2,already,i have already finished my work.
+2,understand,i understand the lesson now.
+2,ugliest,that was the ugliest hat i've ever seen.
+2,concept,the concept is easy to understand.
+2,freezer,put the ice cream in the freezer.
+2,toaster,the toaster burned the bread.
+2,shoulder,he carried the bag on his shoulder.
+2,vicissitudes,she learned to face the vicissitudes of life.
+2,explain,please explain the problem again.
+2,ostrich,an ostrich can run very fast.
+2,dinner,we had dinner together at home.
+2,impossible,it is impossible to finish this alone.
+2,ceramics,the gallery sells handmade ceramics.
+2,pollution,air pollution affects our health.
+2,electrical,the electrical system needs repair.
+2,weather,the weather changed suddenly.
+2,muesli,he eats muesli with milk for breakfast.
+2,wheelchair,she uses a wheelchair at school.
+2,flop,the show was a complete flop.
+2,patient,the nurse is very patient.
+2,upright,sit upright during the lesson.
+2,narrator,the narrator speaks clearly.
+2,torch,he turned on the torch in the dark.
+2,blanket,she covered herself with a blanket.
+2,human,humans need oxygen to live.
+2,inquire,please inquire at the front desk.
+2,monarch,the monarch addressed the nation.
+2,december,december is the coldest month here.
+2,surgery,the patient recovered after surgery.
+2,wrist,she wore a bracelet on her wrist.
+2,deliver,the company will deliver the package.
+2,interview,he passed the job interview.
+2,promise,she made a promise to her parents.
+2,butcher,the butcher cuts the meat carefully.
+2,insect,an insect landed on the flower.
+2,lemon,she added lemon to the tea.
+2,grocery,he went to the grocery store.
+2,farmer,the farmer grows rice.
+2,turkey,turkey is often served on holidays.
+2,dentist,the dentist cleaned my teeth.
+2,market,the market opens early.
+2,volleyball,they play volleyball every weekend.
+2,heater,turn on the heater when it's cold.
+2,league,the team joined a new league.
+2,famous,she became famous after the show.
+2,pencil,sharpen your pencil before writing.
+2,repeat,please repeat the instructions.
+2,cheesecake,the cheesecake tastes delicious.
+2,quicksand,the character sank into quicksand.
+2,prevent,exercise helps prevent disease.
+2,purple,she chose a purple bag.
+2,eraser,use an eraser to fix errors.
+2,bonus,he received a bonus at work.
+2,between,the shop is between two banks.
+2,pumpkins,pumpkins grow well in autumn.
+2,award,she won an award for singing.
+2,jungle,the jungle is full of wildlife.
+2,thunderstorm,a thunderstorm hit last night.
+2,faraway,they moved to a faraway city.
+2,knives,keep knives in a safe place.
+2,microphone,he tested the microphone.
+2,admission,she waits for admission to the museum.
+2,arrange,please arrange the books neatly.
+2,attention,the teacher asks for attention in class.
+2,behavior,good behavior is important at school.
+2,calculate,students calculate the total number.
+2,collection,he has a collection of stamps.
+2,community,the community helps each other.
+2,compete,athletes compete in the school game.
+2,decide,she must decide what to wear.
+2,discover,children discover new things every day.
+2,distance,the distance to school is short.
+2,effort,success needs effort and practice.
+2,energy,healthy food gives us energy.
+2,exercise,we exercise to keep our body strong.
+2,improve,practice helps improve spelling.
+2,include,please include your name on the paper.
+2,information,the book gives useful information.
+2,instruction,follow the instruction carefully.
+2,journey,the journey to the village is long.
+2,knowledge,reading builds knowledge.
+2,material,wood is a strong material.
+2,observe,we observe the stars at night.
+2,organize,she helps organize the class event.
+2,protect,helmets protect our head.
+2,solution,the teacher explains the solution.
+2,ability,reading shows a child’s ability to learn.
+2,activity,drawing is my favorite activity at school.
+2,announce,the teacher will announce the winner.
+2,approve,parents approve good behavior.
+2,balance,she keeps her balance on the bridge.
+2,benefit,exercise has a health benefit.
+2,compare,we compare two pictures in class.
+2,complete,please complete your homework.
+2,connect,we connect ideas when reading.
+2,control,he learns to control his emotions.
+2,creative,the student has a creative mind.
+2,develop,children develop skills by practice.
+2,educate,schools educate young learners.
+2,encourage,teachers encourage students to try.
+2,example,the teacher gives an example.
+2,explore,we explore new topics in class.
+2,focus,please focus on the lesson.
+2,imagine,imagine a world without pollution.
+2,increase,reading can increase knowledge.
+2,method,this method helps learning.
+2,prepare,students prepare for the test.
+2,progress,she makes progress every week.
+2,purpose,the purpose of school is learning.
+2,respect,children should respect each other.
+2,result,hard work gives good results.
+2,achieve,students work hard to achieve their goals.
+2,adapt,animals adapt to their environment.
+2,advance,practice helps learners advance faster.
+2,affect,sleep can affect learning ability.
+2,approach,the teacher uses a new approach.
+2,attempt,she makes an attempt to solve the problem.
+2,aware,children should be aware of safety rules.
+2,brief,the teacher gives a brief explanation.
+2,challenge,spelling bee is a fun challenge.
+2,clarify,please clarify your answer.
+2,commit,students commit to regular practice.
+2,communicate,we communicate using words and gestures.
+2,conclude,we conclude the lesson with a review.
+2,consider,think carefully and consider your choice.
+2,construct,students construct models in class.
+2,context,the meaning depends on the context.
+2,contribute,everyone can contribute ideas.
+2,cooperate,children cooperate during group work.
+2,define,dictionaries define word meanings.
+2,demonstrate,the teacher will demonstrate the task.
+2,determine,tests determine student progress.
+2,discuss,students discuss the story together.
+2,display,artwork is on display at school.
+2,effective,practice is an effective way to learn.
+2,emphasize,teachers emphasize good manners.
+2,engage,fun lessons engage students.
+2,establish,schools establish clear rules.
+2,evaluate,teachers evaluate student work.
+2,expand,reading helps expand vocabulary.
+2,factor,time is an important factor.
+2,feature,the book has a special feature.
+2,function,the heart has an important function.
+2,generate,ideas can generate discussion.
+2,identify,students identify key points.
+2,illustrate,pictures illustrate the story.
+2,impact,exercise has a positive impact.
+2,implement,schools implement new programs.
+2,indicate,signs indicate the right direction.
+2,interpret,readers interpret the meaning.
+2,maintain,maintain focus during lessons.
+2,modify,teachers modify activities.
+2,monitor,parents monitor screen time.
+2,objective,every lesson has an objective.
+2,participate,students participate in class.
+2,perceive,children perceive colors differently.
+2,prioritize,prioritize important tasks first.
+2,process,learning is a process.
+2,respond,students respond politely.
+2,structure,stories have a clear structure.
+2,transfer,skills transfer to new tasks.
+3,maximize,plan your time to maximize learning.
+3,significance,education has great significance.
+3,obstacle,fear can be an obstacle to success.
+3,exonerate,evidence may exonerate the suspect.
+3,vertical,draw a vertical line on the paper.
+3,procedure,follow the procedure step by step.
+3,raspberry,the raspberry tastes sweet and fresh.
+3,manipulate,images can manipulate opinions.
+3,erroneous,the report contains erroneous data.
+3,smudge,a smudge of ink stains the paper.
+3,miscellaneous,the box contains miscellaneous items.
+3,fibrous,vegetables are fibrous and healthy.
+3,acquisition,language learning is an acquisition process.
+3,adolescent,an adolescent learns to make good choices.
+3,tragedy,the story tells a great tragedy.
+3,concurrent,the events happened at concurrent times.
+3,plaintiff,the plaintiff spoke clearly in court.
+3,conscientious,she is conscientious about homework.
+3,wheeze,he may wheeze during heavy exercise.
+3,poignancy,the farewell was full of poignancy.
+3,paralyze,fear can paralyze clear thinking.
+3,lieutenant,the lieutenant gives clear instructions.
+3,clique,a small clique formed at school.
+3,migration,birds migrate during winter.
+3,chandelier,a chandelier lights the hall.
+3,labyrinth,the maze felt like a labyrinth.
+3,pronunciation,correct pronunciation helps clear communication.
+3,infrastructure,roads are part of public infrastructure.
+3,psychology,psychology studies human thoughts and behavior.
+3,abandon,never abandon your goals when learning is hard.
+3,biographical,the book gives biographical details.
+3,adolescence,adolescence is a time of growth and change.
+3,respite,rest provides a short respite.
+3,implement,schools implement new learning methods.
+3,misdemeanor,littering is a minor misdemeanor.
+3,cemetery,the cemetery is kept clean and quiet.
+3,bouquet,she received a bouquet of flowers.
+3,meticulous,she is meticulous with her work.
+3,accommodate,hotels accommodate many travelers.
+3,misbehaved,the child apologized for misbehaved actions.
+3,accompanied,the child is accompanied by a teacher.
+3,acquiesce,he chose to acquiesce to the rules.
+3,vigorously,she shakes the bottle vigorously.
+3,hygiene,good hygiene keeps us healthy.
+3,escalator,stand still on the escalator.
+3,legibly,students should write legibly.
+3,grievance,he reports his grievance politely.
+3,abstain,some students abstain from sweets.
+3,qualified,she is qualified for the leadership role.
+3,gymnasium,students gather in the gymnasium.
+3,fiery,the sunset shows a fiery red color.
+3,nuisance,loud noise can be a nuisance.
+3,personality,kindness is part of her personality.
+3,acquaintance,he greets an old acquaintance.
+3,magnitude,the earthquake had great magnitude.
+3,conceivable,improvement is conceivable with effort.
+3,acres,the farm covers many acres of land.
+3,murmur,a soft murmur fills the room.
+3,catastrophe,the flood was a natural catastrophe.
+3,idiosyncrasy,his laugh is a charming idiosyncrasy.
+3,berserk,he went berserk with excitement at the game.
+3,mileage,the car has high mileage.
+3,ordinarily,maintenance staff ordinarily clean up the litter
+3,biannual,the school holds a biannual festival.
+3,movement,exercise improves body movement.
+3,grotesque,the mask has a grotesque appearance.
+3,sieve,use a sieve to separate the grains.
+3,salient,focus on the salient points.
+3,threatening,dark clouds look threatening in the sky.
+3,absolutely,she absolutely believes in honesty.
+3,pheasant,a pheasant walks quietly through the field.
+3,mischievous,the mischievous child hides the keys.
+3,proportion,mix the paint in correct proportion.
+3,negligible,the cost increase is negligible.
+3,accurate,accurate answers show careful thinking.
+3,plausible,his explanation sounds plausible.
+3,reprimand,the teacher gives a calm reprimand.
+3,popular,reading is popular among curious students.
+3,seethe,he began to seethe with anger.
+3,sandwich,she packs a sandwich for lunch.
+3,justifiable,self-defense can be justifiable.
+3,luxurious,the hotel offers a luxurious stay.
+3,frivolous,frivolous spending can cause problems.
+3,reservoir,the reservoir stores drinking water.
+3,absorb,plants absorb water through their roots.
+3,chrysanthemum,the garden blooms with chrysanthemum flowers.
+3,violation,breaking rules is a violation.
+3,excessive,excessive noise can disturb learning.
+3,legitimate,her concerns are legitimate.
+3,grammatically,the sentence is grammatically correct.
+3,melodious,birds sing in a melodious tone.
+3,media,media can influence opinions.
+3,ignorance,education reduces ignorance.
+3,logistics,logistics ensure supplies arrive on time.
+3,bravado,his bravado hid nervousness.
+3,various,the shop sells various items.
+3,metropolitan,the metropolitan area is very crowded.
+3,permeate,the smell can permeate the room.
+3,valuable,time is a valuable resource.
+3,bureau,the desk is placed near the bureau.
+3,judicious,make judicious choices in life.
+3,privilege,education is a privilege we should value.
+3,feasible,the plan seems feasible.
+3,liquidation,the company enters liquidation after losses.
+3,specific,please give a specific answer.
+3,lucrative,teaching can be rewarding but not always lucrative.
+3,accustomed,she is accustomed to early mornings.
+3,resigned,he resigned after careful consideration.
+3,receiving,she is receiving praise for her effort.
+3,fiasco,the event turned into a planning fiasco.
+3,circumference,measure the circumference of the circle.
+3,reinforce,practice helps reinforce memory.
+3,personification,the poem uses personification to give nature human traits.
+3,soliloquy,the actor performed a powerful soliloquy on stage.
+3,sincerity,sincerity builds trust between people.
+3,mesmerize,the magician can mesmerize the audience.
+3,discernible,the pattern is barely discernible.
+3,tolerate,we should tolerate different opinions.
+3,recipe,the recipe explains how to cook the dish.
+3,spasmodic,his spasmodic movements showed nervousness.
+3,rational,she makes a rational decision.
+3,achievement,winning the contest is an achievement.
+3,rotten,rotten food should not be eaten.
+3,identify,students identify key ideas in the text.
+3,notoriety,the scandal brought notoriety.
+3,sustainable,we must use resources in a sustainable way.
+3,fluctuate,prices may fluctuate over time.
+3,dilemma,she faces a difficult dilemma.
+ we do not have the time to sleep
+3,equilibrium,balance keeps the body in equilibrium.
+3,persevere,successful learners persevere through challenges.
+3,legislation,legislation protects citizens’ rights.
+3,impropriety,the official denied any impropriety.
+3,citadel,the citadel protected the ancient city.
+3,chasm,a wide chasm split the land.
+3,characteristic,kindness is her best characteristic.
+3,reasonable,his request is fair and reasonable.
+3,bimonthly,the club meets bimonthly.
+3,perceived,the risk is perceived differently by people.
+3,onomatopoeia,buzz is an example of onomatopoeia.
+3,capricious,the capricious climate surprises farmers.
+3,innovation,technology drives innovation in education.
+3,guarantee,practice can guarantee improvement.
+3,chameleon,a chameleon changes color to hide.
+3,recruit,the team plans to recruit new members.
+3,besieged,the town was besieged during the war.
+3,benevolent,a benevolent act can change lives.
+3,receipt,keep the receipt after buying goods.
+3,pneumonia,pneumonia affects the lungs seriously.
+3,miniature,the museum displays a miniature model.
+3,chaperone,a parent will chaperone the school trip.
+3,deterrent,strict rules act as a deterrent.
+3,foster,teachers foster curiosity in students.
+3,maneuver,the pilot makes a careful maneuver.
+3,securing,securing doors keeps the building safe.
+3,panic,do not panic when facing a difficult question.
+3,diagnosis,the doctor gives a clear diagnosis.
+3,incandescent,the incandescent bulb glowed warmly.
+3,glamorous,the actress looks glamorous on stage.
+3,gruesome,the story described a gruesome scene.
+3,camouflage,insects use camouflage to survive.
+3,transferring,transferring files requires attention.
+3,obedient,obedient students follow rules.
+3,meteor,a meteor lights up the night sky.
+3,malicious,spreading lies is a malicious act.
+3,university,she dreams of studying at a university.
+3,ambiguous,the instructions are ambiguous and unclear.
+3,sincerely,he sincerely apologizes for the mistake.
+3,lunar,astronauts study the lunar surface.
+3,blasphemous,the comment was considered blasphemous.
+3,framework,the lesson provides a clear framework.
+3,acoustics,the hall has good acoustics.
+3,preliminary,this is only a preliminary result.
+3,smile,a smile can brighten someone’s day.
+3,animosity,animosity can destroy friendships.
+3,statistics,statistics help explain data clearly.
+3,absence,absence from school should be explained.
+3,victim,the victim receives help quickly.
+3,objective,every project has a clear objective.
+3,vehicle,the vehicle stops at the crossing.
+3,transmitted,signals are transmitted through wires.
+3,scenery,the mountain scenery looks beautiful.
+3,existence,clean water is essential for human existence.
+3,incentive,rewards act as an incentive to learn.
+3,optimize,good habits optimize performance.
+3,management,good management helps a team succeed.
+3,incessant,the incessant noise disturbed sleep.
+3,disbursement,the office delays fund disbursement.
+3,recommend,teachers recommend reading every day.
+3,situation,she handles the situation calmly.
+3,affiliation,her affiliation with the group is public.
+3,liaison,she serves as a liaison between teams.
+3,secretary,the secretary organizes important files.
+3,chauffeur,the chauffeur drives the guests safely.
+3,chronic,stress can cause chronic illness.
+3,scourge,pollution is a modern scourge.
+3,extremity,frostbite can damage fingers and other extremities.
+3,perseverance,perseverance leads to success.
+3,abundant,food is abundant after the harvest.
+3,nurture,teachers nurture young minds.
+3,stationary,the car remains stationary at the light.
+3,extricate,firefighters extricate people from danger.
+3,palatable,the healthy meal was palatable.
+3,auxiliary,auxiliary staff assist the main team.
+3,solemn,the ceremony was quiet and solemn.
+3,precipitation,snow is a form of precipitation.
+3,traitor,the tale warns against becoming a traitor.
+3,expunge,mistakes should be corrected
+3,escapade,the trip became a fun escapade.
+3,souvenir,she keeps a souvenir from her trip.
+3,gorgeous,the garden looks gorgeous in spring.
+3,uniform,students wear a uniform to school.
+3,impasse,the negotiation reached an impasse.
+3,reddest,this apple is the reddest of all.
+3,accessible,the library is accessible to all students.
+3,rococo,the palace has rococo decorations.
+3,hierarchy,the organization has a clear hierarchy.
+3,pandemonium,the crowd fell into pandemonium.
+3,envious,he feels envious of her success.
+3,confiscate,teachers may confiscate unsafe items.
+3,malady,the doctor treats the rare malady.
+3,persuade,good arguments can persuade people to change.
+3,isolation,isolation can affect mental health.
+3,collateral,the bank asks for collateral.
+3,accomplishment,finishing the book is a great accomplishment.
+3,voyage,the ship begins a long voyage.
+3,scarcity,water scarcity affects many regions.
+3,malignant,malignant cells grow uncontrollably.
+3,frostbitten,his frostbitten fingers needed medical care.
+3,evacuation,evacuation saves lives during danger.
+3,accumulate,dust can accumulate quickly.
+3,phenomenon,a rainbow is a natural phenomenon.
+3,puny,the puny plant needs more sunlight.
+3,fortify,the wall is built to fortify the city.
+3,resilience,resilience helps people recover from hardship.
+3,collaborate,students collaborate on the project.
+3,generosity,generosity helps build strong communities.
+3,lustrous,her hair looks lustrous and healthy.
+3,vicious,the vicious storm damaged houses.
+3,colonel,the colonel leads the soldiers.
+3,scuttle,the mouse began to scuttle away.
+3,acquittal,the jury announced the acquittal calmly.
+3,mortgage,they pay the mortgage every month.
+3,cocoon,the butterfly grows inside a cocoon.
+3,abbreviation,an abbreviation shortens a long word.
+3,flamboyant,the dancer wears a flamboyant costume.
+3,formidable,the mountain looks formidable to climbers.
+3,panicked,she panicked briefly but then stayed calm.
+3,consciousness,meditation improves consciousness and focus.
+3,prominence,education gives reading great prominence.
+3,minimize,we should minimize waste.
+3,vacillate,do not vacillate when making important decisions.
+3,changeable,the weather is changeable this season.
+3,luncheon,the school hosts a formal luncheon.
+3,retrieve,please retrieve the lost book.
+3,espionage,espionage threatens national security.
+3,phantom,the child imagined a phantom in the dark room.
+3,belligerent,the belligerent tone caused conflict.
+3,playwright,the playwright wrote a famous drama.
+3,morale,teamwork improves morale.
+3,ambassador,the ambassador promotes peace between nations.
+3,ordinary,reading can turn ordinary days into adventures.
+3,transferred,she was transferred to another school.
+3,dialogue,the story includes meaningful dialogue.
+3,version,this book has a new version.
+3,spacious,the classroom feels spacious and bright.
+3,integrity,integrity means doing the right thing.
+3,wilderness,animals live freely in the wilderness.
+3,hypothesis,the experiment tests a new hypothesis.
+3,inevitable,mistakes are inevitable when learning.
+3,retaliate,violence should never be used to retaliate.
+3,visualize,visualize success before the test.
+3,paradox,the story presents an interesting paradox.
+3,mechanism,the clock uses a simple mechanism.
+3,restaurant,the family eats dinner at a restaurant.
+3,caricature,the artist draws a funny caricature.
+3,epidemic,the epidemic spreads quickly.
+3,chastise,teachers should not chastise unfairly.
+3,penitentiary,the criminal is sent to a penitentiary.
+3,slumber,deep slumber helps the body recover.
+3,exhilarated,she feels exhilarated after winning.
+3,paralysis,paralysis affects the ability to move muscles.
+3,recognition,hard work deserves recognition.
+3,barometer,a barometer measures air pressure.
+3,havoc,the storm caused havoc in the village.
+3,colleague,she greets her colleague politely.
+3,desolate,the desert looks dry and desolate.
+3,apparatus,the scientist prepared the apparatus carefully.
+3,harass,we must never harass others.
+3,subscription,he has a subscription to a science magazine.
+3,altercation,the argument became a loud altercation.
+3,forgery,forgery is a serious crime.
+3,intervene,teachers intervene to stop bullying.
+3,mercenary,he fights as a mercenary for money.
+3,futile,arguing without listening is futile.
+3,fiscal,the school plans its fiscal budget.
+3,mitigate,safety rules mitigate risks.
+3,skeptical,he is skeptical about false information.
+3,longevity,exercise supports longevity and health.
+3,unnecessary,shouting is unnecessary in class.
+4,alveoli,alveoli help the lungs exchange oxygen.
+4,anemone,the sea anemone lives among coral reefs.
+4,aphorism,the teacher shared an aphorism about honesty.
+4,apothecary,the apothecary prepared herbal medicine.
+4,bouillabaisse,bouillabaisse is a traditional french fish soup.
+4,bouquet,he gave her a bouquet of flowers.
+4,cacophony,the street was filled with a cacophony of sounds.
+4,cerulean,the cerulean sky looked calm and clear.
+4,chameleon,a chameleon changes color to blend in.
+4,charcuterie,the board displayed a variety of charcuterie.
+4,chiaroscuro,the painting uses chiaroscuro for strong contrast.
+4,cognac,cognac is a type of french brandy.
+4,connoisseur,the connoisseur appreciated fine art.
+4,ecclesiastical,the church follows ecclesiastical traditions.
+4,eclecticism,her style shows eclecticism in design.
+4,epitome,she is the epitome of kindness.
+4,euouae,euouae appears in medieval musical notation.
+4,gnocchi,gnocchi is a soft italian pasta.
+4,gourmet,the chef prepared a gourmet meal.
+4,haphazard,the books were stacked in a haphazard way.
+4,heinous,the crime was considered heinous.
+4,hyperbole,saying a million times is hyperbole.
+4,isthmus,an isthmus connects two larger lands.
+4,macabre,the story had a macabre tone.
+4,ophthalmologist,an ophthalmologist checks eye health.
+4,pharaoh,the pharaoh ruled ancient egypt.
+4,phlegm,phlegm protects the lungs from dust.
+4,plenipotentiary,the diplomat acted as a plenipotentiary.
+4,pneumonia,pneumonia can cause serious breathing problems.
+4,pseudonym,the author wrote under a pseudonym.
+4,psychiatrist,a psychiatrist helps treat mental illness.
+4,psychosomatic,stress can cause psychosomatic symptoms.
+4,quixotic,his quixotic dream ignored reality.
+4,schadenfreude,he felt schadenfreude at his rival’s failure.
+4,sphygmomanometer,a sphygmomanometer measures blood pressure.
+4,surreptitious,they exchanged surreptitious glances.
+4,synecdoche,wheels is a synecdoche for a car.
+4,thorough,do a thorough review before the test.
+4,visceral,the movie caused a visceral reaction.
+4,worcestershire,worcestershire sauce adds strong flavor.
+4,prenuptial,a prenuptial agreement can help couples discuss finances responsibly.
+4,oxygenate,aquatic plants help oxygenate the pond and support fish life.
+4,manipulable,data becomes manipulable when it is stored in digital form.
+4,mulligan,the teacher allowed a mulligan so students could redo the quiz.
+4,churlish,his churlish behavior showed a lack of respect for others.
+4,sophisticated,the software uses sophisticated algorithms to detect errors.
+4,succulent,succulents are ideal plants for learning about water conservation.
+4,annihilate,unchecked pollution can annihilate fragile ecosystems.
+4,axiomatic,it is axiomatic that practice improves language skills.
+4,sabermetrics,sabermetrics uses statistics to analyze baseball performance.
+4,riviera,the riviera is known for its mild climate and tourism economy.
+4,nebulous,the concept seemed nebulous until the teacher explained it clearly.
+4,bedraggled,the bedraggled hikers learned the importance of preparation.
+4,sarcophagus,the sarcophagus protected the mummy for thousands of years.
+4,indefatigable,her indefatigable curiosity made her a great researcher.
+4,elocution,elocution classes help students speak clearly and confidently.
+4,laconic,his laconic answers forced others to ask better questions.
+4,genus,humans belong to the genus homo in biological classification.
+4,rectitude,the judge was respected for his moral rectitude.
+4,surrogate,the robot acted as a surrogate teacher during the experiment.
+4,ulterior,asking good questions helps reveal ulterior motives.
+4,dowager,the dowager funded educational programs in the village.
+4,excision,excision of damaged tissue can prevent further infection.
+4,legionnaire,the legionnaire studied discipline and teamwork in training.
+4,emblazoned,the school logo was emblazoned on every student uniform.
+4,sternutation,sternutation is the scientific term for sneezing.
+4,inundate,heavy rain can inundate lowland farming areas.
+4,uncouth,his uncouth remarks highlighted the need for better manners.
+4,pianola,the pianola demonstrated early automation in music technology.
+4,subcutaneous,the vaccine was injected into the subcutaneous layer of skin.
+4,wunderkind,the wunderkind excelled in mathematics at a young age.
+4,onerous,the onerous task taught students about time management.
+4,diaphanous,the diaphanous fabric illustrated how light passes through materials.
+4,longitude,longitude helps determine a location east or west on earth.
+4,alacrity,she accepted the challenge with alacrity and enthusiasm.
+4,filial,filial responsibility emphasizes respect toward parents.
+4,macrocosm,society can be seen as a macrocosm of human behavior.
+4,allegiance,citizenship often involves allegiance to national laws.
+4,agoraphobia,agoraphobia can limit a person’s ability to engage socially.
+4,maverick,the scientist was a maverick who challenged old theories.
+4,choreographer,the choreographer studied anatomy to improve movement design.
+4,wearisome,repetitive tasks can become wearisome without motivation.
+4,bulbous,the bulbous shape of the flask helps distribute heat evenly.
+4,basaltic,basaltic rock forms from cooled volcanic lava.
+4,tortoise,the tortoise teaches patience through its slow movement.
+4,retrograde,some cultures viewed certain planets as retrograde symbols.
+4,leguminous,leguminous plants enrich soil by fixing nitrogen.
+4,visage,facial expressions reveal much about a person’s visage.
+4,umpirage,fair umpirage is essential for maintaining sports integrity.
+4,scorpion,the scorpion is studied for its unique venom properties.
+4,surmountable,obstacles become surmountable with planning and effort.
+4,partridge,the partridge is commonly studied in wildlife biology.
+4,ceramics,ceramics demonstrate the chemistry of heat and minerals.
+4,fascinator,the exhibit served as a fascinator for young science students.
+4,heredity,heredity explains how traits pass from parents to children.
+4,planetarium,the planetarium helps students visualize astronomical concepts.
+4,endurance,endurance training improves both physical and mental strength.
+4,insignia,military insignia communicate rank and responsibility.
+4,mimetic,mimetic behavior helps animals survive by imitation.
+4,testimony,scientific testimony must be supported by evidence.
+4,philharmonic,the philharmonic orchestra educates audiences about classical music.
+4,ecstatic,students felt ecstatic after solving the complex problem.
+4,bonobo,bonobos are studied for their cooperative social behavior.
+4,binomial,a binomial expression consists of two algebraic terms.
+4,reflexology,reflexology is believed to promote relaxation through foot pressure points.
+4,aerials,television aerials receive broadcast signals.
+4,menorahs,menorahs are used during hanukkah celebrations.
+4,humus,humus improves soil fertility in agriculture.
+4,montmorency,montmorency cherries are often studied for their antioxidant content.
+4,confucianism,confucianism emphasizes ethics
+4,intentionally,the experiment was intentionally designed to reduce bias.
+4,surgeon,a surgeon requires extensive training and precision.
+4,heirloom,heirloom seeds preserve genetic diversity in crops.
+4,cantonese,cantonese is widely spoken in southern china.
+4,justaucorps,the justaucorps was a common garment in eighteenth-century europe.
+4,chaucerian,chaucerian language reflects early forms of modern english.
+4,cocoon,the cocoon protects the insect during metamorphosis.
+4,judaism,judaism is one of the world’s oldest monotheistic religions.
+4,pallid,his pallid appearance suggested exhaustion.
+4,herbalist,an herbalist studies medicinal plants.
+4,ducats,ducats were once used as gold coins in europe.
+4,edinburgh,edinburgh is known for its historic architecture and festivals.
+4,motley,the museum displayed a motley collection of artifacts.
+4,stalemate,negotiations reached a stalemate with no agreement.
+4,renal,renal function is essential for filtering blood.
+4,fortuitous,a fortuitous discovery led to scientific progress.
+4,condyles,condyles help joints move smoothly.
+4,carlisle,carlisle has historical significance in northern england.
+4,fetlocks,fetlocks are joints found in horses and other animals.
+4,thoroughfare,the main thoroughfare connects several districts.
+4,mete,judges mete out sentences according to law.
+4,russet,russet leaves indicate seasonal change.
+4,poultice,a poultice was traditionally used to reduce inflammation.
+4,yom kippur,yom kippur is observed as a solemn day of reflection.
+4,mantua,mantua played an important role during the renaissance.
+4,ranchero,ranchero music reflects rural mexican culture.
+4,transgressions,laws define consequences for serious transgressions.
+4,topologically,shapes can differ topologically while looking similar.
+4,guarantor,a guarantor ensures financial responsibility.
+4,firenze,firenze is the italian name for florence.
+4,jains,jains practice principles of nonviolence.
+4,intolerance,intolerance undermines social cohesion.
+4,abdomen,the abdomen contains vital organs.
+4,burgundy,burgundy wine is associated with french vineyards.
+4,adduced,the lawyer adduced evidence to support the claim.
+4,kaddish,kaddish is a prayer recited in jewish tradition.
+4,ziggurat,a ziggurat was a monumental structure in ancient mesopotamia.
+4,gluten,gluten affects the texture of baked goods.
+4,appeasement,appeasement policies shaped prewar diplomacy.
+4,impertinent,the impertinent remark disrupted the discussion.
+4,chelonia,chelonia refers to the order of turtles.
+4,arapaho,the arapaho are an indigenous people of north america.
+4,agnail,an agnail can become painful if not treated properly.
+4,afroth,waves afroth the surface of the sea during a storm.
+4,anoint,ancient rituals often anoint leaders with oil.
+4,heterophony,heterophony occurs when variations of a melody are played together.
+4,capnometer,a capnometer measures carbon dioxide in exhaled air.
+4,perquisite,access to training materials was a perquisite of the job.
+4,rhapsody,the composer wrote a rhapsody inspired by folklore.
+4,appraisal,performance appraisal helps identify strengths and weaknesses.
+4,polonium,polonium is a rare and highly radioactive element.
+4,fontina,fontina cheese is commonly used in italian cuisine.
+4,pilotage,pilotage ensures ships navigate safely into port.
+4,franciscan,franciscan traditions emphasize humility and service.
+4,parabola,a parabola is a common shape in mathematics and physics.
+4,espial,the spy avoided espial by using coded messages.
+4,biomimicry,biomimicry applies natural designs to human innovation.
+4,arietta,the opera included a short arietta for the soprano.
+4,abaft,the lifeboat was secured abaft the main deck.
+4,primeval,primeval forests preserve ancient ecosystems.
+4,kung pao,kung pao chicken illustrates regional chinese cooking styles.
+4,durango,durango is a state in northern mexico.
+4,deprivation,sleep deprivation affects cognitive performance.
+4,romano,romano cheese is often grated over pasta.
+4,morphological,morphological analysis examines word structure.
+4,aglossal,an aglossal condition involves the absence of a tongue.
+4,pomato,a pomato combines tomato and potato plants through grafting.
+4,ante,players must ante before the game begins.
+4,impoverish,conflict can impoverish entire communities.
+4,retrodict,scientists retrodict past climates using data models.
+4,nodosity,nodosity can indicate disease in plant roots.
+4,inerrancy,the doctrine stresses the inerrancy of sacred texts.
+4,amiably,the debate ended amiably despite disagreements.
+4,flexitarian,a flexitarian diet emphasizes plant-based foods.
+4,expectorant,an expectorant helps clear mucus from airways.
+4,somniloquy,somniloquy refers to talking during sleep.
+4,munich,munich is a major cultural center in germany.
+4,nomancy,nomancy involves divination through names.
+4,parsimony,scientific theories value parsimony and simplicity.
+4,tasmanian,the tasmanian devil is native to australia.
+4,antacid,an antacid neutralizes excess stomach acid.
+4,coalition,a coalition government shares political power.
+4,officinal,officinal herbs are used in traditional medicine.
+4,prion,prion diseases affect the nervous system.
+4,hipsterism,hipsterism reflects alternative cultural trends.
+4,umbilical,the umbilical cord supplies nutrients to a fetus.
+4,discretionary,discretionary spending varies by income.
+4,cassandra,cassandra symbolizes ignored warnings in literature.
+4,ancho,ancho peppers add mild heat to dishes.
+4,melamine,melamine is used in durable kitchenware.
+4,zacate,zacate refers to grass or fodder in spanish.
+4,inveterate,he was an inveterate reader of history books.
+4,quinary,a quinary system is based on the number five.
+4,polyester,polyester fabric is durable and wrinkle-resistant.
+4,eluate,the eluate was collected during chromatography.
+4,acquit,the jury voted to acquit due to lack of evidence.
+4,ammunition,accurate data is essential ammunition in a scientific debate.
+4,sculpture,the sculpture demonstrated advanced carving techniques.
+4,habanero,habanero peppers are studied for their high capsaicin content.
+4,licensure,professional licensure ensures competency and standards.
+4,autodidact,as an autodidact
+4,plethora,the internet provides a plethora of learning resources.
+4,pariah,unethical behavior can turn a company into a pariah.
+4,annuity,an annuity provides regular income after retirement.
+4,francophone,francophone communities preserve french language traditions.
+4,herculean,completing the project was a herculean effort.
+4,parable,a parable teaches moral lessons through storytelling.
+4,rappelled,the climbers rappelled down the cliff safely.
+4,prodigious,the child showed prodigious talent in mathematics.
+4,convivium,a convivium fostered intellectual discussion and community.
+4,pilgrimages,pilgrimages have cultural and spiritual significance.
+4,rowan,the rowan tree is associated with folklore.
+4,conceit,literary conceit links complex ideas through metaphor.
+4,denominator,a common denominator simplifies comparison.
+4,curmudgeon,the curmudgeon criticized every new proposal.
+4,atrium,the atrium allows natural light into the building.
+4,oriel,an oriel window extends outward from a wall.
+4,tripartite,the agreement followed a tripartite structure.
+4,tapas,tapas encourage social dining traditions.
+4,prorogue,governments may prorogue sessions for political reasons.
+4,italicization,italicization is used to emphasize foreign words.
+4,preeminent,the scholar is preeminent in her field.
+4,sediment,river sediment contributes to fertile soil.
+4,fecund,fecund soil supports diverse plant life.
+4,tutelage,under proper tutelage
+4,preliminary,preliminary results require further testing.
+4,alfresco,alfresco dining is popular in warm climates.
+4,succinct,a succinct explanation improves understanding.
+4,laceration,the doctor treated the laceration carefully.
+4,domiciled,the company is domiciled in the capital.
+4,loquacious,the loquacious speaker filled the lecture hall with stories.
+4,inquietude,social unrest created widespread inquietude.
+4,caveat,the contract included a legal caveat.
+4,theorem,the theorem was proven using logic.
+4,reticulated,reticulated patterns appear in leaf veins.
+4,prosthetic,prosthetic devices restore mobility.
+4,compunction,she felt compunction after speaking harshly.
+4,doubloons,doubloons were used in historical trade.
+4,accrual,interest accrual increases savings over time.
+4,latency,network latency affects performance.
+4,decumbiture,decumbiture once described illness duration.
+4,oscillation,oscillation occurs in pendulum motion.
+4,duchy,the duchy was governed by a duke.
+4,grandeur,the palace reflected imperial grandeur.
+4,fiscal,fiscal responsibility supports economic stability.
+4,epitaphs,epitaphs preserve memory and history.
+4,multivalent,language can be multivalent in meaning.
+4,artillery,artillery changed the nature of warfare.
+4,dinero,dinero is slang for money in spanish.
+4,establishment,the establishment influences public policy.
+4,logographic,chinese is a logographic writing system.
+4,dishevel,the storm disheveled the garden.
+4,quotient,division produces a quotient.
+4,comestibles,comestibles must be stored safely.
+4,ruminate,critical thinkers ruminate on ideas.
+4,armistice,an armistice ended the conflict.
+4,stenographer,a stenographer records spoken proceedings.
+4,sympathy,sympathy strengthens social bonds.
+4,cryogenic,cryogenic temperatures preserve biological samples.
+4,preferential,preferential treatment undermines fairness.
+4,tuffet,the nursery rhyme mentions a tuffet.
+4,guttural,guttural sounds originate in the throat.
+4,mezzanine,the mezzanine overlooks the main floor.
+4,puniness,the puniness of the sample affected results.
+4,catalyst,education acts as a catalyst for change.
+4,bazooka,the bazooka altered modern combat tactics.
+4,epact,the epact helps calculate the calendar.
+4,atrocious,atrocious conditions violate human rights.
+4,lozenge,a lozenge soothes a sore throat.
+4,thespian,the thespian trained in classical drama.
+4,complacency,complacency prevents progress.
+4,abstruse,the theory seemed abstruse to beginners.
+4,vivacious,her vivacious personality energized the class.
+4,tedious,repetitive tasks can feel tedious.
+4,aisles,wide aisles improve safety and accessibility in public buildings.
+4,lineage,genetic lineage helps trace ancestry.
+4,embroidery,embroidery reflects cultural craftsmanship.
+4,primordial,primordial instincts influence human behavior.
+4,unsportsmanlike,unsportsmanlike conduct violates fair play rules.
+4,coaxing,coaxing encouragement can help shy students participate.
+4,coronation,the coronation marked the beginning of a new reign.
+4,moppet,the moppet watched the lesson with curiosity.
+4,ensnarement,online scams rely on psychological ensnarement.
+4,permanence,digital records raise questions about data permanence.
+4,padre,the padre offered guidance during difficult times.
+4,assassinate,history records attempts to assassinate political leaders.
+4,morbidity,morbidity rates help assess public health risks.
+4,larkspur,larkspur is studied in botany for its toxicity.
+4,mien,body language contributes to a person’s mien.
+4,vuvuzela,the vuvuzela became widely known during international football events.
+
 1,Tripod,The camera is on a tripod.
 1,Hooter,The hooter signaled the end of the game.
 1,Wacky,He told a wacky story.
