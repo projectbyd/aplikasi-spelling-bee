@@ -41,6 +41,7 @@ html,body{
   position:fixed;
   top:0;left:0;right:0;
   padding:22px 16px 18px;
+  min-height:260px;
   z-index:1000;
   background-image:url("header-bg.png");
   background-size:cover;
@@ -74,10 +75,11 @@ html,body{
 }
 #subtitle{
   text-align:center;
-  font-size:12px;
+  font-size:10px;
   color:#38b6ff;
   text-shadow:0 2px 6px rgba(255,255,255,4);
   margin-bottom:10px;
+  padding:0 10px;
   font-family:'Comfortaa', cursive;
 }
 .hiddenTop{
@@ -285,7 +287,7 @@ th:nth-child(4),td:nth-child(4){width:20%;}
 .instruction-btn{
   flex:1;
   padding:0 14px;
-  background:##f2e590;
+  background:#f2e590;
   color:#38b6ff;
   font-family:'Comfortaa', cursive;
 }
@@ -964,6 +966,7 @@ async function loadInternalCSV(level){
 <script src="js/auth-check.js"></script>
 </body>
 </html>
+
 
 
 
