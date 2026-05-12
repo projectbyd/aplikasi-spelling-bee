@@ -211,7 +211,7 @@ th,td{
 }
 tr.active td{background:#fff3bf;}
 tr{
-  scroll-margin-top:260px;
+  scroll-margin-top:20px;
 }
 
 .word{
@@ -787,9 +787,26 @@ function render(){
   });
 }
 function focusRow(i){
-  [...tbody.children].forEach(r=>r.classList.remove("active"));
-  tbody.children[i].classList.add("active");
-  tbody.children[i].scrollIntoView({behavior:"smooth",block:"center"});
+   [...tbody.children].forEach(r =>
+    r.classList.remove("active")
+  );
+
+  const row = tbody.children[i];
+  row.classList.add("active");
+
+  const wrapper = document.querySelector(".wrapper");
+
+  // tinggi header atas
+  const topOffset = 20;
+
+  // posisi row di dalam wrapper
+  const rowTop = row.offsetTop;
+
+  // scroll rapi
+  wrapper.scrollTo({
+    top: rowTop - topOffset,
+    behavior: "smooth"
+  });
 }
 
 /* PLAY */
