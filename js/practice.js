@@ -225,8 +225,6 @@ function submitAnswer(){
 function handleTimeout(){
   if(!isAnswering) return;
 
-  speak("Time's up");
-
   isAnswering = false;
   answers.push({
     word: currentQuestion.word,
@@ -234,6 +232,8 @@ function handleTimeout(){
     correct: false
   });
 
+  setTimeout(nextQuestion, 800);
+  
   nextQuestion();
 }
 
