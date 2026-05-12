@@ -224,17 +224,22 @@ function submitAnswer(){
 
 function handleTimeout(){
   if(!isAnswering) return;
-
+  
+  // 🔇 hentikan semua voice yang masih ngantri
+  speechSynthesis.cancel();
+  
   isAnswering = false;
+  
   answers.push({
     word: currentQuestion.word,
     userAnswer: "",
     correct: false
   });
 
-  setTimeout(nextQuestion, 800);
-  
-  nextQuestion();
+  // ⏳ kasih jeda sebentar lalu lanjut soal berikutnya
+  setTimeout(() => {
+    nextQuestion();
+  }, 500);
 }
 
 function nextQuestion(){
