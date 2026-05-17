@@ -96,7 +96,7 @@ async function startPractice(){
   session = questions
     .filter(q => q.level === level)
     .sort(() => Math.random() - 0.5)
-    .slice(0, 25);
+    .slice(0, 10);
 
   if(session.length === 0){
     alert("Soal untuk level ini belum tersedia");
