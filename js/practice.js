@@ -179,7 +179,7 @@ function playQuestion(){
 
   [u1,u2,u3].forEach(u=>{
     u.lang = "en-US";
-    u.rate = 0.75;
+    u.rate = 0.65;
   });
 
   u1.onend = () => speechSynthesis.speak(u2);
