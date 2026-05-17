@@ -37,12 +37,12 @@ body{
   box-shadow:0 10px 30px rgba(0,0,0,.15);
   text-align:center;
 }
-
-.card h1{
-  font-family:'Henny Penny', cursive;
-  font-size:40px;
-  color:#38b6ff;
-  margin-bottom:8px;
+  
+.logo{
+  width:220px;
+  max-width:90%;
+  margin-bottom:4px;
+  object-fit:contain;
 }
 
 .card p{
@@ -86,7 +86,8 @@ button{
 <body>
 
 <div class="card">
-  <h1>Spellabee</h1>
+ <img src="logo-spellabee.png" class="logo">
+  
   <p>Hear it. Spell it. Master it</p>
 
   <input id="nameInput" placeholder="Name">
